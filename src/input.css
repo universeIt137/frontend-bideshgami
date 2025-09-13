@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+    --container-xl:85rem;
+    --color-primary:var(--primary)
+}
+:root{
+    --primary:oklch(0.5635 0.2408 260.82)
+}
