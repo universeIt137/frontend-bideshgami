@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hajj single View page</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <!-- Header Section Start -->
+    <header>
+      <div class="mx-auto max-w-xl">
+        <div class="flex justify-between items-center px-4 py-2">
+          <!-- Logo -->
+          <a href="/" class="block w-[150px] shrink-0">
+            <img
+              src="../dist/public/logo.png"
+              alt="Bideshgami Logo"
+              class="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="hidden lg:flex items-center gap-3">
+            <a
+              href="#"
+              aria-label="Chat"
+              class="hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+              >
+                <path
+                  d="M0 2.5c0-.56.223-1.1.62-1.498A2.117 2.117 0 0 1 2.118.382H9.53c.561 0 1.1.223 1.497.62.397.398.62.937.62 1.498v4.235a2.117 2.117 0 0 1-2.117 2.118H7.412L4.235 12.03V8.853H2.118A2.117 2.117 0 0 1 0 6.735V2.5Z"
+                  fill="#0066FF"
+                />
+                <path
+                  d="M13.216 4.088V6.206c0 1.123-.449 2.2-1.248 2.994a4.207 4.207 0 0 1-3.014 1.24H7.706l-1.882 1.87c.299.158.639.247 1 .247h2.13l3.197 3.176v-3.176h2.13a2.117 2.117 0 0 0 2.117-2.118V6.206a2.117 2.117 0 0 0-2.117-2.118h-1.066Z"
+                  fill="#0066FF"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              aria-label="Notifications"
+              class="hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M10.466 18.232c.895 0 1.627-.736 1.627-1.635H8.84c0 .9.732 1.635 1.627 1.635Zm5.288-4.904V8.833c0-2.493-1.75-4.618-4.068-5.149v-.572a1.22 1.22 0 0 0-2.44 0v.572c-2.32.531-4.069 2.656-4.069 5.149v4.495l-1.627 1.635v.817H17.38v-.817l-1.627-1.635Z"
+                  fill="#0066FF"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-toggle"
+            class="lg:hidden flex flex-col gap-1.5 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+            aria-label="Toggle menu"
+          >
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:block bg-primary">
+        <div
+          class="text-white mx-auto flex justify-between max-w-xl items-center px-4 py-4"
+        >
+          <ul class="flex items-center gap-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Air-Ticket</a></li>
+            <li><a href="#" class="hover:underline">Work Permit</a></li>
+            <li><a href="#" class="hover:underline">Student</a></li>
+            <li><a href="#" class="hover:underline">Hajj & Umrah</a></li>
+            <li><a href="#" class="hover:underline">Visa Processing</a></li>
+            <li><a href="#" class="hover:underline">Tour Package</a></li>
+            <li><a href="#" class="hover:underline">Hotel</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+          </ul>
+
+          <div class="flex items-center gap-6">
+            <button
+              type="button"
+              class="hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
+            >
+              En/Bn
+            </button>
+            <a
+              href="#"
+              class="inline-flex gap-2 items-center hover:bg-blue-800 px-3 py-1 rounded-lg transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+              >
+                <path
+                  d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
+                  fill="white"
+                />
+              </svg>
+              Sign in
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="lg:hidden hidden flex-col bg-primary text-white px-4 py-4 space-y-3"
+      >
+        <a href="#" class="block hover:underline">Home</a>
+        <a href="#" class="block hover:underline">Air-Ticket</a>
+        <a href="#" class="block hover:underline">Work Permit</a>
+        <a href="#" class="block hover:underline">Student</a>
+        <a href="#" class="block hover:underline">Hajj & Umrah</a>
+        <a href="#" class="block hover:underline">Visa Processing</a>
+        <a href="#" class="block hover:underline">Tour Package</a>
+        <a href="#" class="block hover:underline">Hotel</a>
+        <a href="#" class="block hover:underline">About</a>
+        <div class="pt-3 border-t border-blue-400">
+          <button class="hover:underline">En/Bn</button>
+          <a href="#" class="block mt-2 hover:bg-blue-800 px-3 py-1 rounded-lg"
+            >Sign in</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section End -->
+    <!-- Hajj Banner start -->
+
+    <section>
+      <div class="relative w-full">
+        <!-- Image -->
+        <img
+          src="../dist/public/makka.png"
+          alt="Hero Image"
+          class="w-full h-full object-cover object-center"
+        />
+
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black/80 bg-opacity-10"></div>
+
+        <!-- Optional content on top -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h1 class="text-white text-3xl md:text-5xl font-bold text-center">
+            Welcome to Our Site
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!-- Hajj Banner end -->
+
+    <!-- details card start -->
+    <section class="mt-5 max-w-xl mx-auto">
+      <div class="bg-white border border-gray-300 rounded-lg p-4">
+        <div class="flex justify-between items-center">
+          <div class="space-y-2">
+            <h1 class="text-2xl tracking-tight font-bold text-primary">
+              Hajj Pre Registration 2025
+            </h1>
+            <p class="text-sm font-medium tracking-tight text-gray-600">
+              Posted on 01 Jul 12:19 pm
+            </p>
+            <span class="text-xs text-primary font-medium tracking-tight"
+              >POST ID: (HU:010120)</span
+            >
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <div
+              class="inline-flex items-center space-x-2 bg-gray-200 border border-gray-300 p-0.5 rounded-sm"
+            >
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect
+                  x="0.337158"
+                  y="0.83728"
+                  width="18"
+                  height="18"
+                  fill="url(#pattern0_1_97132)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0_1_97132"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_97132"
+                      transform="scale(0.00390625)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_97132"
+                    width="256"
+                    height="256"
+                    preserveAspectRatio="none"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <p>205 Total Booking</p>
+            </div>
+            <div class="bg-gray-200 border border-gray-300 p-0.5 rounded-sm">
+              <svg
+                width="24"
+                height="26"
+                viewBox="0 0 24 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.02134 11.6337C5.71867 11.0891 5.24373 10.6604 4.67106 10.415C4.09839 10.1695 3.46042 10.1211 2.85729 10.2775C2.25416 10.4338 1.72001 10.786 1.3387 11.2787C0.957383 11.7715 0.750488 12.3769 0.750488 13C0.750488 13.6231 0.957383 14.2285 1.3387 14.7212C1.72001 15.214 2.25416 15.5662 2.85729 15.7225C3.46042 15.8788 4.09839 15.8305 4.67106 15.585C5.24373 15.3395 5.71867 14.9108 6.02134 14.3662M6.02134 11.6337C6.24634 12.0387 6.37509 12.5037 6.37509 13C6.37509 13.4962 6.24634 13.9625 6.02134 14.3662M6.02134 11.6337L17.9788 4.99124M6.02134 14.3662L17.9788 21.0087M17.9788 4.99124C18.1542 5.32141 18.3935 5.61332 18.683 5.8499C18.9724 6.08648 19.3062 6.26298 19.6646 6.36908C20.0231 6.47519 20.3991 6.50877 20.7707 6.46785C21.1423 6.42694 21.502 6.31236 21.8287 6.13081C22.1555 5.94927 22.4429 5.70439 22.6739 5.4105C22.9049 5.11662 23.0751 4.77962 23.1744 4.41922C23.2737 4.05881 23.3001 3.68223 23.2521 3.31148C23.2042 2.94074 23.0828 2.58327 22.8951 2.25999C22.5252 1.62291 21.9201 1.15641 21.2098 0.960754C20.4996 0.7651 19.741 0.855915 19.097 1.21368C18.453 1.57144 17.9751 2.16759 17.766 2.87398C17.557 3.58037 17.6334 4.34059 17.9788 4.99124ZM17.9788 21.0087C17.7994 21.3317 17.6854 21.6869 17.6432 22.0539C17.601 22.4209 17.6316 22.7927 17.7331 23.1479C17.8346 23.5032 18.0051 23.835 18.2348 24.1243C18.4645 24.4137 18.749 24.6549 19.072 24.8344C19.3949 25.0138 19.7501 25.1278 20.1171 25.17C20.4842 25.2122 20.8559 25.1816 21.2112 25.0801C21.5664 24.9786 21.8982 24.8081 22.1875 24.5784C22.4769 24.3487 22.7182 24.0642 22.8976 23.7412C23.2599 23.089 23.3483 22.3195 23.1433 21.602C22.9383 20.8846 22.4567 20.278 21.8045 19.9156C21.1522 19.5533 20.3827 19.4649 19.6653 19.6699C18.9478 19.8749 18.3412 20.3565 17.9788 21.0087Z"
+                  stroke="#0066FF"
+                  stroke-width="1.1437"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="bg-gray-200 border border-gray-300 p-0.5 rounded-sm">
+              <svg
+                width="28"
+                height="26"
+                viewBox="0 0 28 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27.25 7.5625C27.25 3.93854 24.189 1 20.4133 1C17.5915 1 15.1677 2.64208 14.125 4.98563C13.0823 2.64208 10.6585 1 7.83521 1C4.0625 1 1 3.93854 1 7.5625C1 18.0917 14.125 25.0625 14.125 25.0625C14.125 25.0625 27.25 18.0917 27.25 7.5625Z"
+                  fill="#EDF0F8"
+                  stroke="#0066FF"
+                  stroke-width="1.1437"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <img
+              src="../dist/public/umrah.jpg"
+              alt="umrah"
+              class="object-cover aspect-video rounded-md"
+            />
+          </div>
+          <!-- action card start -->
+          <div class="bg-white border border-gray-300 rounded-lg">
+            <div
+              class="bg-primary rounded-t-lg flex flex-col justify-center items-center space-y-5 py-4"
+            >
+              <h3 class="text-xl font-bold leading-relaxed text-gray-200">
+                Business Visit
+              </h3>
+              <h2 class="text-4xl font-bold tracking-tight text-white">
+                ৳ 28750
+              </h2>
+            </div>
+            <div class="p-4">
+              <form class="space-y-4">
+                <div class="flex flex-col relative">
+                  <label
+                    for="packageType"
+                    class="mb-2 text-sm font-medium text-gray-700"
+                  >
+                    Package Type <span class="text-red-500">*</span>
+                  </label>
+
+                  <!-- Custom Dropdown -->
+                  <div class="relative">
+                    <button
+                      type="button"
+                      id="dropdownButton"
+                      class="w-full flex justify-between items-center px-4 py-2 border border-gray-300 rounded-lg shadow-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    >
+                      <span id="selectedOption">-- Select Package --</span>
+                      <svg
+                        class="w-5 h-5 text-gray-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </button>
+
+                    <!-- Dropdown Options -->
+                    <div
+                      id="dropdownOptions"
+                      class="absolute mt-2 w-full hidden bg-white border border-gray-200 rounded-xl shadow-lg z-10"
+                    >
+                      <div
+                        class="px-4 py-3 hover:bg-indigo-50 cursor-pointer rounded-t-xl"
+                        data-value=""
+                      >
+                        <h4 class="font-medium text-gray-800">Select id</h4>
+                        <p class="text-sm text-gray-500">
+                          Special Umrah package
+                        </p>
+                      </div>
+                      <div
+                        class="px-4 py-3 hover:bg-indigo-50 cursor-pointer rounded-t-xl"
+                        data-value="umrah"
+                      >
+                        <h4 class="font-medium text-gray-800">Umrah</h4>
+                        <p class="text-sm text-gray-500">
+                          Special Umrah package
+                        </p>
+                      </div>
+                      <div
+                        class="px-4 py-3 hover:bg-indigo-50 cursor-pointer rounded-b-xl"
+                        data-value="hajj"
+                      >
+                        <h4 class="font-medium text-gray-800">Hajj</h4>
+                        <p class="text-sm text-gray-500">
+                          Exclusive Hajj package
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="submit"
+                  class="flex justify-center items-center px-5 py-4 bg-primary w-full rounded-lg font-semibold tracking-tight text-lg cursor-pointer text-white"
+                >
+                  Booking Now
+                </button>
+              </form>
+              <button
+                type="button"
+                class="inline-flex gap-3 mt-4 justify-center items-center px-5 py-4 bg-primary w-full rounded-lg font-semibold tracking-tight text-lg cursor-pointer text-white"
+              >
+                <svg
+                  width="30"
+                  height="26"
+                  viewBox="0 0 30 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M30 12.9999C30 20.1796 23.2838 25.9999 15 25.9999C12.3376 26.0109 9.71166 25.3867 7.34437 24.1799L0 25.9999L2.50875 20.2C0.924375 18.1386 0 15.6631 0 12.9999C0 5.82025 6.71625 0 15 0C23.2838 0 30 5.82025 30 12.9999ZM9.375 11.1428H5.625V14.8571H9.375V11.1428ZM24.375 11.1428H20.625V14.8571H24.375V11.1428ZM13.125 11.1428H16.875V14.8571H13.125V11.1428Z"
+                    fill="white"
+                  />
+                </svg>
+                Chat
+              </button>
+            </div>
+          </div>
+          <!-- action card end -->
+        </div>
+        <div class="mt-4">
+          <h4 class="text-2xl font-medium text-primary">Description</h4>
+          <p class="leading-relaxed line-clamp-3">
+            However, as the workaround description implies, this separate
+            tracking carries the risk of someone still being served the same ad
+            even after the limit has been exceeded. Nurses found that working
+            safely isn’t only about PPE and sanitation, but also a much broader
+            range of practices, from using technology in new ways to changing
+            job descriptions Those restaurants’ profiles on Goldbelly are then
+            linked to in the description box of the video and Thrillist makes a
+            commission off of any transactions.Later this year, developers will
+            be required to include information in a so-called “nutrition label”
+            about how their apps collect data on their app description page.Baby
+            cigarette “No worry of cancer with this cigarette costume,” the
+            description for this gem reads.However, as the workaround
+            description implies, this separate tracking carries the risk of
+            someone still being served the same ad even after the limit has been
+            exceeded. Nurses found that working safely isn’t only about PPE and
+            sanitation, but also a much broader range of practices, from using
+            technology in new ways to tracking carries the risk of someone still
+            being served the same ad even after the limit has been exceeded.
+          </p>
+          <div class="flex justify-between"><div></div><button class="mt-4 text-primary underline cursor-pointer">View Details</button></div>
+        </div>
+      </div>
+    </section>
+    <!-- details card end -->
+
+    <script>
+      const dropdownButton = document.getElementById("dropdownButton");
+      const dropdownOptions = document.getElementById("dropdownOptions");
+      const selectedOption = document.getElementById("selectedOption");
+
+      dropdownButton.addEventListener("click", () => {
+        dropdownOptions.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll("#dropdownOptions div").forEach((option) => {
+        option.addEventListener("click", () => {
+          selectedOption.textContent = option.querySelector("h4").textContent;
+          dropdownOptions.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
