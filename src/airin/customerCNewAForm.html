@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../dist/output.css">
+    <title>Create Account</title>
+
+
+</head>
+
+<body class="inter">
+   
+    <!-- Nav -->
+     <header>
+      <div class="mx-auto max-w-xl">
+        <div class="flex justify-between items-center px-4 py-2">
+          <!-- Logo -->
+          <a href="/" class="block w-[150px] shrink-0">
+            <img
+              src="../../dist/public/logo.png"
+              alt="Bideshgami Logo"
+              class="w-full h-auto object-contain"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="hidden lg:flex items-center gap-3">
+            <a
+              href="#"
+              aria-label="Chat"
+              class="hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+              >
+                <path
+                  d="M0 2.5c0-.56.223-1.1.62-1.498A2.117 2.117 0 0 1 2.118.382H9.53c.561 0 1.1.223 1.497.62.397.398.62.937.62 1.498v4.235a2.117 2.117 0 0 1-2.117 2.118H7.412L4.235 12.03V8.853H2.118A2.117 2.117 0 0 1 0 6.735V2.5Z"
+                  fill="#0066FF"
+                />
+                <path
+                  d="M13.216 4.088V6.206c0 1.123-.449 2.2-1.248 2.994a4.207 4.207 0 0 1-3.014 1.24H7.706l-1.882 1.87c.299.158.639.247 1 .247h2.13l3.197 3.176v-3.176h2.13a2.117 2.117 0 0 0 2.117-2.118V6.206a2.117 2.117 0 0 0-2.117-2.118h-1.066Z"
+                  fill="#0066FF"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              aria-label="Notifications"
+              class="hover:opacity-80 transition-opacity"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <path
+                  d="M10.466 18.232c.895 0 1.627-.736 1.627-1.635H8.84c0 .9.732 1.635 1.627 1.635Zm5.288-4.904V8.833c0-2.493-1.75-4.618-4.068-5.149v-.572a1.22 1.22 0 0 0-2.44 0v.572c-2.32.531-4.069 2.656-4.069 5.149v4.495l-1.627 1.635v.817H17.38v-.817l-1.627-1.635Z"
+                  fill="#0066FF"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <button
+            id="menu-toggle"
+            class="lg:hidden flex flex-col gap-1.5 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"
+            aria-label="Toggle menu"
+          >
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+            <span class="w-6 h-0.5 bg-gray-800"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:block bg-blue-600">
+        <div
+          class="text-white mx-auto flex justify-between max-w-xl items-center px-4 py-4"
+        >
+          <ul class="flex items-center gap-4">
+            <li><a href="#" class="hover:underline">Home</a></li>
+            <li><a href="#" class="hover:underline">Air-Ticket</a></li>
+            <li><a href="#" class="hover:underline">Work Permit</a></li>
+            <li><a href="#" class="hover:underline">Student</a></li>
+            <li><a href="#" class="hover:underline">Hajj & Umrah</a></li>
+            <li><a href="#" class="hover:underline">Visa Processing</a></li>
+            <li><a href="#" class="hover:underline">Tour Package</a></li>
+            <li><a href="#" class="hover:underline">Hotel</a></li>
+            <li><a href="#" class="hover:underline">About</a></li>
+          </ul>
+
+          <div class="flex items-center gap-6">
+            <button
+              type="button"
+              class="hover:underline focus:outline-none focus:ring-2 focus:ring-white rounded"
+            >
+              En/Bn
+            </button>
+            <a
+              href="#"
+              class="inline-flex gap-2 items-center hover:bg-blue-800 px-3 py-1 rounded-lg transition-colors duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+              >
+                <path
+                  d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
+                  fill="white"
+                />
+              </svg>
+              Sign in
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!-- Mobile Menu -->
+      <nav
+        id="mobile-menu"
+        class="lg:hidden hidden flex-col bg-blue-600 text-white px-4 py-4 space-y-3"
+      >
+        <a href="#" class="block hover:underline">Home</a>
+        <a href="#" class="block hover:underline">Air-Ticket</a>
+        <a href="#" class="block hover:underline">Work Permit</a>
+        <a href="#" class="block hover:underline">Student</a>
+        <a href="#" class="block hover:underline">Hajj & Umrah</a>
+        <a href="#" class="block hover:underline">Visa Processing</a>
+        <a href="#" class="block hover:underline">Tour Package</a>
+        <a href="#" class="block hover:underline">Hotel</a>
+        <a href="#" class="block hover:underline">About</a>
+        <div class="pt-3 border-t border-blue-400">
+          <button class="hover:underline">En/Bn</button>
+          <a href="#" class="block mt-2 hover:bg-blue-800 px-3 py-1 rounded-lg"
+            >Sign in</a
+          >
+        </div>
+      </nav>
+    </header>
+
+     <!-- form -->
+    <section class="flex justify-center items-center py-10">
+        <div class="sm:flex flex-col justify-center items-center drop-shadow-lg p-6 rounded-xl shadow-lg  w-2/3">
+            <h2 class="  font-semibold text-2xl md:text-[40px]">Create A New Account</h2>
+            <p class=" text-sm text-center">Welcome Back Bideshgami! Please Enter Your Login Details</p>
+
+            <div class="mt-6 w-full flex flex-col items-start justify-center">
+                <!-- Basic Information -->
+                <h3 class="md:text-[28px] text-xl text-[#0066FFCC] font-semibold">Basic Information</h3>
+                <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 mt-4 w-full">
+                    <div>
+                        <p class="pl-2">Enter Your Name<span class="text-[#0066FF]">*</span></p>
+                        <input type="text" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Your Full Name">
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your Gender<span class="text-[#0066FF]">*</span></p>
+                        <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="pl-2">Date of Birth<span class="text-[#0066FF]">*</span></p>
+                        <input type="date" class="border-2 border-black rounded-lg p-2 w-full">
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your District<span class="text-[#0066FF]">*</span></p>
+                        
+                          <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Your District</option>
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Cumilla</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="pl-2">Select Your Police Station<span class="text-[#0066FF]">*</span></p>
+                      
+                         <select class="border-2 border-black rounded-lg p-2 w-full">
+                            <option>Select Your Police Station</option>
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Cumilla</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Login Information -->
+                <h3 class="md:text-[28px] text-xl text-[#0066FFCC] font-semibold mt-6">Login Information</h3>
+                <div class="sm:grid sm:grid-cols-1 md:grid-cols-2 gap-6 mt-4 w-full">
+                    <div>
+                        <p class="pl-2">Enter Your Phone Number<span class="text-[#0066FF]">*</span></p>
+                        <input type="tel" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Enter Your Phone Number">
+                    </div>
+                    <div>
+                        <p class="pl-2">Enter Your E-mail</p>
+                        <input type="email" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Enter Your E-mail">
+                    </div>
+                    <div>
+                        <p class="pl-2">Create New Password</p>
+                        <div class="flex relative items-center">
+                        <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Create New Password">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="pl-2">Confirm Password</p>
+                        <div class="flex relative items-center">
+                        <input type="password" class="border-2 border-black rounded-lg p-2 w-full"
+                            placeholder="Confirm Password">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-6"> <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                        </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="mt-6 bg-[#0066FF] w-full text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">
+                    Create
+                </button>
+            </div>
+        </div>
+    </section>
+
+    
+     <footer class="bg-[#0066FF] mt-6 text-white text-base">
+        <div class="sm:flex sm:flex-col md:flex-row items-start gap-4 md:items-center md:justify-between md:px-16 px-4 py-2 md:py-4">
+            <div class="sm:flex flex-col ">
+                <h3 class="font-semibold text-2xl">Discovr</h3>
+                <a>home</a>
+                <a>Terms & conditions</a>
+                <a>Cereer</a>
+                <a>Refund Policy</a>
+                <a>EMI Policy</a>
+                <a>Privacy POlicy</a>
+            </div>
+            <div class="sm:flex flex-col gap-8 sm:items-center">
+                <h3 class="font-semibold text-2xl">Payment Methods</h3>
+                <img src="../../dist/public/payment.png" alt="">
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                    <h3 class="font-semibold text-2xl">Need Help ?</h3>
+                    <p>We are Always here for you! <br>Knock us on Messenger anytime <br>or Call our Hotline (10AM - 10PM).</p>
+                </div>
+                <div>
+                       <h3 class="font-semibold text-2xl">Contact</h3>
+                       <p>info@bideshgami.com
++09302202020219</p>
+                </div>
+                
+            </div>
+            <div class="flex flex-col gap-4">
+                <div>
+                     <h3 class="font-semibold text-2xl">Download our app</h3>
+                     <img src="../../dist/public/paly.png" alt="">
+                </div>
+                <div>
+                     <h3 class="font-semibold text-2xl">Follow Us</h3>
+                    <div class="sm:flex gap-2 items-center">
+                        <img src="../../dist/public/social1.png" alt="logo"><img src="../../dist/public/social2.png" alt="logo"><img src="../../dist/public/social3.png" alt="logo"><img src="../../dist/public/social3.png" alt=""><img src="../../dist/public/social5.png" alt="">
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <hr>
+      <img src="../../dist/public/footer.png" class="p-2" alt="">
+
+     </footer>
+
+    <script src="/toggle.js"></script>
+
+</body>
+
+</html>
