@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bideshgami</title>
+
     <link rel="stylesheet" href="../dist/output.css" />
+    <title>Bideshgami</title>
   </head>
-  <body class="antialiased">
-    <!-- Header Section Start -->
+
+  <body>
+    <!-- nav -->
     <header>
       <div class="mx-auto max-w-xl">
         <div class="flex justify-between items-center px-4 py-2">
           <!-- Logo -->
           <a href="/" class="block w-[150px] shrink-0">
             <img
-              src="../dist/public/logo.png"
+              src="../../dist/public/logo.png"
               alt="Bideshgami Logo"
               class="w-full h-auto object-contain"
               loading="lazy"
@@ -79,7 +81,7 @@
       </div>
 
       <!-- Desktop Menu -->
-      <nav class="hidden lg:block bg-primary">
+      <nav class="hidden lg:block bg-blue-600">
         <div
           class="text-white mx-auto flex justify-between max-w-xl items-center px-4 py-4"
         >
@@ -94,7 +96,6 @@
             <li><a href="#" class="hover:underline">Hotel</a></li>
             <li><a href="#" class="hover:underline">About</a></li>
           </ul>
-
           <div class="flex items-center gap-6">
             <button
               type="button"
@@ -126,13 +127,13 @@
       <!-- Mobile Menu -->
       <nav
         id="mobile-menu"
-        class="lg:hidden hidden flex-col bg-primary text-white px-4 py-4 space-y-3"
+        class="lg:hidden hidden flex-col bg-blue-600 text-white px-4 py-4 space-y-3"
       >
-        <a href="./index.html" class="block hover:underline">Home</a>
+        <a href="#" class="block hover:underline">Home</a>
         <a href="#" class="block hover:underline">Air-Ticket</a>
         <a href="#" class="block hover:underline">Work Permit</a>
         <a href="#" class="block hover:underline">Student</a>
-        <a href="./hajjAndUmrah.html" class="block hover:underline">Hajj & Umrah</a>
+        <a href="#" class="block hover:underline">Hajj & Umrah</a>
         <a href="#" class="block hover:underline">Visa Processing</a>
         <a href="#" class="block hover:underline">Tour Package</a>
         <a href="#" class="block hover:underline">Hotel</a>
@@ -145,33 +146,88 @@
         </div>
       </nav>
     </header>
-    <!-- Header Section End -->
-  
 
-    <!-- Hero Section Start-->
-    <div class="w-full h-64 flex items-center justify-center overflow-hidden">
-      <img
-        src="../dist/public/hero.png"
-        alt="Plane image"
-        class="object-cover object-center"
-        loading="lazy"
-      />
-    </div>
-    <!-- Hero Section End-->
+    <section class="mt-4">
+      <div class="flex flex-col lg: md:gap-4 gap-0 justify-center items-center">
+        <h2 class="font-bold text-2xl md:text-6xl">
+          Welcome To <span class="text-[#0066FF]">Bideshgami</span>
+        </h2>
+        <p class="font-semibold md:text-3xl text-lg">Sign In to Continue</p>
+        <div class="grid md:grid-cols-3 grid-cols-1 mt-4 gap-4">
+          <div
+            class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"
+          >
+            <img src="../../dist//public/travel.png" alt="" />
+            <p class="text-2xl font-semibold pt-6">Customer</p>
+          </div>
+          <div
+            class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"
+          >
+            <img src="../../dist//public/marchent.png" alt="" />
+            <p class="text-2xl font-semibold pt-6">Merchant</p>
+          </div>
+          <div
+            class="bg-[#F2F7FF] md:p-8 p-4 rounded-xl shadow-xl flex flex-col justify-center items-center"
+          >
+            <img src="../../dist/public/agency.png" alt="" />
+            <p class="text-2xl font-semibold pt-6">Agency</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Search and filter options Start -->
-
-    <!-- Search and filter options End -->
-
-
-    <h1>Hello</h1>
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-
-      menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
+    <footer class="bg-[#0066FF] mt-6 text-white text-base">
+      <div
+        class="sm:flex sm:flex-col md:flex-row items-start gap-4 md:items-center md:justify-between md:px-16 px-4 py-2 md:py-4"
+      >
+        <div class="sm:flex flex-col">
+          <h3 class="font-semibold text-2xl">Discovr</h3>
+          <a>home</a>
+          <a>Terms & conditions</a>
+          <a>Cereer</a>
+          <a>Refund Policy</a>
+          <a>EMI Policy</a>
+          <a>Privacy POlicy</a>
+        </div>
+        <div class="sm:flex flex-col gap-8 sm:items-center">
+          <h3 class="font-semibold text-2xl">Payment Methods</h3>
+          <img src="../../dist/public/payment.png" alt="" />
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="font-semibold text-2xl">Need Help ?</h3>
+            <p>
+              We are Always here for you! <br />Knock us on Messenger anytime
+              <br />or Call our Hotline (10AM - 10PM).
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold text-2xl">Contact</h3>
+            <p>info@bideshgami.com +09302202020219</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="font-semibold text-2xl">Download our app</h3>
+            <img src="../../dist/public/paly.png" alt="" />
+          </div>
+          <div>
+            <h3 class="font-semibold text-2xl">Follow Us</h3>
+            <div class="sm:flex gap-2 items-center">
+              <img src="../../dist/public/social1.png" alt="logo" /><img
+                src="../../dist/public/social2.png"
+                alt="logo"
+              /><img src="../../dist/public/social3.png" alt="logo" /><img
+                src="../../dist/public/social3.png"
+                alt=""
+              /><img src="../../dist/public/social5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <img src="../../dist/public/footer.png" class="p-2" alt="" />
+    </footer>
+    <script src="/toggle.js"></script>
   </body>
 </html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Agency Profile</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <script defer>
+      function previewImage(event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const box = document.getElementById("uploadBox");
+
+            // Border remove
+            box.classList.remove(
+              "border-2",
+              "border-dashed",
+              "border-gray-400",
+              "hover:border-blue-500",
+              "hover:text-blue-500",
+              "text-gray-500"
+            );
+
+            // Replace box content with uploaded image
+            box.innerHTML = `<img src="${e.target.result}" 
+                                alt="Uploaded" 
+                                class="w-full h-full object-contain p-2 rounded-lg"/>`;
+          };
+          reader.readAsDataURL(file);
+        }
+      }
+    </script>
+  </head>
+
+  <body class="antialiased inter">
+    <div class="bg-slate-100">
+      <!-- navbar section -->
+      <div class="px-4 py-2 flex items-center justify-between bg-white">
+        <div class="w-36 px-4 py-4">
+          <img src="/dist/public/logo.png" alt="logo" />
+        </div>
+        <div id="mobileMenu" class="lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 inline-block mr-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div class="md:w-60 flex gap-2 items-center">
+          <div class="">
+            <img src="/dist/public/user.png" alt="user" class="w-full" />
+          </div>
+          <p class="text-[#0066FF] hidden md:flex md:font-medium">
+            Bideshgami Agent
+          </p>
+        </div>
+      </div>
+      <div class="lg:grid lg:grid-cols-16 gap-5">
+        <!-- Sidebar -->
+        <div class="hidden lg:block px-4 py-4 lg:col-span-4 bg-white">
+          <div class="flex items-center w-36 h-36 mx-auto">
+            <img
+              src="/dist/public/profile.png"
+              alt="profile"
+              class="w-full h-full rounded-full shadow-xl"
+            />
+          </div>
+          <div class="py-4">
+            <h4 class="text-center text-xl font-bold">Mahamudul Hasan Fahad</h4>
+            <p class="text-sm text-center text-[#00000099]">User ID: 01001</p>
+            <p class="text-sm text-center text-[#00000099]">
+              User Email: yiwad97950@bnsteps.com
+            </p>
+            <p class="text-sm text-center text-[#00000099]">
+              User Phone No: +8801816-346393
+            </p>
+          </div>
+
+          <!-- Navigation Menu -->
+
+          <nav class="mt-6 space-y-2">
+            <!-- Normal Links -->
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 12l9-9 9 9m-9 9V12m0 0H6v9h12v-9h-6z"
+                  />
+                </svg>
+              </span>
+              Home
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 3h7v7H3V3zM14 3h7v7h-7V3zM3 14h7v7H3v-7zM14 14h7v7h-7v-7z"
+                  />
+                </svg>
+              </span>
+              Dashboard
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 20.042A9 9 0 0112 15a9 9 0 019.542 5.042M12 15v6"
+                  />
+                </svg>
+              </span>
+              My Profile
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </span>
+              Create Ads
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </span>
+              My Ads
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7 8h10M7 12h4m-4 4h6M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z"
+                  />
+                </svg>
+              </span>
+              Message
+            </a>
+
+            <!-- Dropdowns: use the same buttons -->
+            <div>
+              <button
+                onclick="toggleDropdown('fileMenu')"
+                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100"
+              >
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9-4 9 4M3 7h18"
+                    />
+                  </svg>
+                  <span> Our All File</span>
+                </span>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div id="fileMenu" class="ml-6 space-y-1 hidden">
+                <a href="#" class="block text-sm px-3 py-1">All Customer</a>
+                <a href="#" class="block text-sm px-3 py-1">Applied Customer</a>
+                <a href="#" class="block text-sm px-3 py-1">Receive Passport</a>
+                <a href="#" class="block text-sm px-3 py-1">Under Processing</a>
+                <a href="#" class="block text-sm px-3 py-1">Visa Approved</a>
+                <a href="#" class="block text-sm px-3 py-1">Ready For Flight</a>
+                <a href="#" class="block text-sm px-3 py-1">Success File</a>
+                <a href="#" class="block text-sm px-3 py-1">Return Passport</a>
+              </div>
+            </div>
+
+            <div>
+              <button
+                onclick="toggleDropdown('bookingMenu')"
+                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100"
+              >
+                <span class="flex items-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 8c-3.866 0-7 1.343-7 3s3.134 3 7 3 7-1.343 7-3-3.134-3-7-3zM5 11v6a2 2 0 002 2h10a2 2 0 002-2v-6M5 11l7-4 7 4"
+                    />
+                  </svg>
+                  <span> All Booking File</span>
+                </span>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div id="bookingMenu" class="ml-6 space-y-1 hidden">
+                <a href="#" class="block text-sm px-3 py-1">My Booking</a>
+                <a href="#" class="block text-sm px-3 py-1">Under Processing</a>
+                <a href="#" class="block text-sm px-3 py-1">Success File</a>
+                <a href="#" class="block text-sm px-3 py-1">Return Passport</a>
+              </div>
+            </div>
+
+            <div>
+              <button
+                onclick="toggleDropdown('userMenu')"
+                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100"
+              >
+                <span class="flex items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M16 14a4 4 0 10-8 0 4 4 0 008 0zM12 14v6m0 0H9m3 0h3"
+                    />
+                  </svg>
+                  <span> User</span>
+                </span>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline-block mr-2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </button>
+              <div id="userMenu" class="ml-6 space-y-1 hidden">
+                <a href="#" class="block text-sm px-3 py-1">Create User</a>
+                <a href="#" class="block text-sm px-3 py-1">Manage User</a>
+                <a href="#" class="block text-sm px-3 py-1">User Activity</a>
+              </div>
+            </div>
+
+            <!-- Other Links -->
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5z"
+                  />
+                </svg>
+              </span>
+              <span> Commission</span>
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </span>
+              Check Status
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 8c-3 0-5 1-5 3s2 3 5 3 5-1 5-3-2-3-5-3zM3 12h18"
+                  />
+                </svg>
+              </span>
+              Payment
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 11c0-1.104.896-2 2-2s2 .896 2 2-1.104 2-2 2-2-.896-2-2zM4 12c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8z"
+                  />
+                </svg>
+              </span>
+              Change Password
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6l4 2"
+                  />
+                </svg>
+              </span>
+              Terms and Condition
+            </a>
+
+            <a
+              href="#"
+              class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 12H3m0 0l4-4m-4 4 4 4M21 12v6a2 2 0 01-2 2H9"
+                  />
+                </svg>
+              </span>
+              Log Out
+            </a>
+          </nav>
+        </div>
+        <!-- DashBoard Overview -->
+        <div class="col-span-12 flex flex-col p-2 mt-4 items-start gap-4">
+          <h3 class="md:text-2xl font-semibold text-xl">All Agents</h3>
+          <div class="flex relative gap-2 md:gap-4 w-full">
+            <div class="flex items-center w-72">
+              <input
+                type="text"
+                class="border-2 text-sm md:text-base font-semibold border-[#00000033] rounded-lg p-2 md:py-2 md:px-4 w-60 md:w-72"
+                placeholder="Search by Agent ID Or Name"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:size-6 size-4 text-[#00000033] font-bold absolute left-52 md:left-64"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+
+            <select
+              class="border-2 border-[#00000033] font-semibold text-black rounded-lg px-2 py-2 text-sm"
+            >
+              <option class="text-sm">All Agents</option>
+              <option class="text-sm">Male</option>
+              <option class="text-sm">Female</option>
+              <option class="text-sm">Other</option>
+            </select>
+          </div>
+
+          <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+            <div class="bg-amber-200"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer class="bg-blue-600 text-white">
+        <div
+          class="container mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Discover</h3>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="hover:underline">Home</a></li>
+              <li>
+                <a href="#" class="hover:underline">Terms & conditions</a>
+              </li>
+              <li><a href="#" class="hover:underline">Career</a></li>
+              <li><a href="#" class="hover:underline">Refund Policy</a></li>
+              <li><a href="#" class="hover:underline">EMI Policy</a></li>
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Payment Methods</h3>
+            <div class="">
+              <img src="/dist/public/payment.png" alt="Visa" class="w-30" />
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Need Help ?</h3>
+            <p class="text-sm mb-3">
+              We are Always here for you!<br />
+              Knock us on Messenger anytime<br />
+              or Call our Hotline (10AM - 10PM).
+            </p>
+            <h4 class="text-lg font-semibold">Contact</h4>
+            <p class="text-sm">info@bideshgami.com</p>
+            <p class="text-sm">+0930220202019</p>
+          </div>
+          <div>
+            <div>
+              <h3 class="text-xl font-semibold mb-4">Download our app</h3>
+              <div class="flex flex-col gap-3">
+                <a href="#"
+                  ><img
+                    src="/dist/public/paly.png"
+                    alt="Google Play"
+                    class="w-32"
+                /></a>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold my-4">Follow Us</h3>
+              <div class="flex space-x-4">
+                <a href="#"
+                  ><img
+                    src="/dist/public/social1.png"
+                    class="h-6"
+                    alt="Facebook"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/dist/public/social2.png"
+                    class="h-6"
+                    alt="Instagram"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/dist/public/social3.png"
+                    class="h-6"
+                    alt="Twitter"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/dist/public/social4.png"
+                    class="h-6"
+                    alt="YouTube"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="/dist/public/social5.png"
+                    class="h-6"
+                    alt="LinkedIn"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-white/30 mt-4">
+          <div
+            class="container mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center"
+          >
+            <div class="flex items-center space-x-2">
+              <img
+                src="/dist/public/footer.png"
+                alt="Bideshgami Logo"
+                class="w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../agancy-profile/profile.js"></script>
+  </body>
+</html>
