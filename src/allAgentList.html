@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Agency Profile</title>
     <link rel="stylesheet" href="../dist/output.css" />
 
@@ -298,248 +298,491 @@
                 <h3 class="md:text-2xl font-semibold text-xl">All Agents</h3>
                 <div class="flex relative gap-2 md:gap-4 w-full">
                     <div class="flex items-center w-72">
-                    <input type="text" class="border-2 text-sm md:text-base font-semibold border-[#00000033] rounded-lg p-2 md:py-2  md:px-4 w-60 md:w-72" placeholder="Search by Agent ID Or Name">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:size-6 size-4 text-[#00000033] font-bold absolute left-52 md:left-64">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
+                        <input type="text"
+                            class="border-2 text-sm md:text-base font-semibold border-[#00000033] rounded-lg p-2 md:py-2  md:px-4 w-60 md:w-72"
+                            placeholder="Search by Agent ID Or Name">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="md:size-6 size-4 text-[#00000033] font-bold absolute left-52 md:left-64">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
                     </div>
 
                     <select class="border-2 border-[#00000033] font-semibold  text-black rounded-lg px-2 py-2 text-sm ">
-                            <option class="text-sm">All Agents</option>
-                            <option class="text-sm">Male</option>
-                            <option class="text-sm">Female</option>
-                            <option class="text-sm">Other</option>
-                        </select>
+                        <option class="text-sm">All Agents</option>
+                        <option class="text-sm">Male</option>
+                        <option class="text-sm">Female</option>
+                        <option class="text-sm">Other</option>
+                    </select>
                 </div>
 
-            <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                <div class="w-full grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+                            
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <!-- <div
+                                    class="w-40 h-40 rounded-full overflow-hidden bg-[conic-gradient(transparent_90deg,#01A0F9_0deg,#01A0F9_90deg)]">
+                                </div> -->
+                                  <div
+                                    class="w-40 h-40 rotate-270 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
-                </div>
-                <div class="flex justify-baseline relative h-10 items-center">
-                   <div class="w-40 -left-20 absolute h-10 overflow-hidden">
-  <div class="w-40 h-40 rounded-full bg-[conic-gradient(orange_0deg,orange_90deg,transparent_90deg)]"></div>
-</div>
-         
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
 
 
-                </div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
-
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                        </div>
                     </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                        </div>
                     </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                        </div>
                     </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
-                    </div>
-                </div>
-                <div></div>
-            </div>
-            <div class=" bg-white flex rounded-md flex-col gap-2">
-                <div class="p-4 flex flex-col gap-1 justify-center items-center">
-                    <img src="/dist/public/agent.png" alt="">
-                    <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
-                  <p class="font-semibold text-[10px]">Shosp Name: <span class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
-                  <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]"> bideshgamiagent@gmail.com</span></p>
-                  <p class="font-semibold text-[10px]">Phone Number: <span class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
-                  <p class="font-semibold text-[10px]">Agent ID: <span class="text-[#000000BF] text-[9px]"> BG01</span></p>
-               </div>
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
 
-                    <div class="flex gap-4 mt-2 justify-center">
-                        <button class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                        <button class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" bg-white flex rounded-md flex-col gap-2">
+                        <div class="p-4 flex flex-col gap-1 justify-center items-center">
+                            <img src="/dist/public/agent.png" alt="">
+                            <div class="flex flex-col items-start justify-center">
+                                <h3 class="text-base font-bold">Md.Mahamudul Hasan</h3>
+                                <p class="font-semibold text-[10px]">Shosp Name: <span
+                                        class="text-[#000000BF] text-[9px]">Bideshgami Agent</span></p>
+                                <p class="font-semibold text-[10px]">Email: <span class="text-[#000000BF] text-[9px]">
+                                        bideshgamiagent@gmail.com</span></p>
+                                <p class="font-semibold text-[10px]">Phone Number: <span
+                                        class="text-[#000000BF] text-[9px]">+8801602589473</span></p>
+                                <p class="font-semibold text-[10px]">Agent ID: <span
+                                        class="text-[#000000BF] text-[9px]"> BG01</span></p>
+                            </div>
+
+                            <div class="flex gap-4 mt-2 justify-center">
+                                <button
+                                    class="bg-[#008000] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                                <button
+                                    class="bg-[#F56810] px-2 pb-1 text-center rounded-sm text-sm font-medium text-white">Details</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-end relative h-10 items-center">
+                            <div class="w-40 -left-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(#01A0F9_0deg,#01A0F9_90deg,transparent_90deg)]">
+                                </div>
+                            </div>
+
+                            <div class="w-40 -right-20 absolute h-10 overflow-hidden">
+                                <div
+                                    class="w-40 h-40 rounded-full bg-[conic-gradient(transparent_270deg,transparent_0deg,transparent_0deg,#01A0F9_90deg)]">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                  
+
                 </div>
-                <div></div>
             </div>
-        
-            </div>
-            </div>
-          
+
 
 
         </div>

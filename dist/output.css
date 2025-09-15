@@ -213,6 +213,9 @@
   .right-6 {
     right: calc(var(--spacing) * 6);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .-left-20 {
     left: calc(var(--spacing) * -20);
   }
@@ -410,6 +413,21 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .origin-bottom-left {
+    transform-origin: bottom left;
+  }
+  .rotate-1 {
+    rotate: 1deg;
+  }
+  .rotate-90 {
+    rotate: 90deg;
+  }
+  .rotate-180 {
+    rotate: 180deg;
+  }
+  .rotate-270 {
+    rotate: 270deg;
+  }
   .cursor-pointer {
     cursor: pointer;
   }
@@ -436,6 +454,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-start {
     justify-content: flex-start;
@@ -602,14 +623,47 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[conic-gradient\(\#01A0F9_0deg\,\#01A0F9_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(#01A0F9 0deg,#01A0F9 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(\#01A0F9_0deg\,_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(#01A0F9 0deg, 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(\#01A0F9_0deg\,orange_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(#01A0F9 0deg,orange 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(\#00659E_0deg\,\#01A0F9_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(#00659E 0deg,#01A0F9 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(\#00659E_0deg\,_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(#00659E 0deg, 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(\,transparent_90deg\,orange_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(,transparent 90deg,orange 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(\,transparent_90degorange_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(,transparent 90degorange 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(_0deg\,orange_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient( 0deg,orange 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(orange_0deg\,orange_0deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(orange 0deg,orange 0deg,transparent 90deg);
+  }
   .bg-\[conic-gradient\(orange_0deg\,orange_60deg\,transparent_0deg\)\] {
     background-image: conic-gradient(orange 0deg,orange 60deg,transparent 0deg);
   }
   .bg-\[conic-gradient\(orange_0deg\,orange_60deg\,transparent_60deg\)\] {
     background-image: conic-gradient(orange 0deg,orange 60deg,transparent 60deg);
   }
+  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(orange 0deg,orange 90deg);
+  }
   .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_0deg\)\] {
     background-image: conic-gradient(orange 0deg,orange 90deg,transparent 0deg);
+  }
+  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_10deg\)\] {
+    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 10deg);
   }
   .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_60deg\)\] {
     background-image: conic-gradient(orange 0deg,orange 90deg,transparent 60deg);
@@ -620,11 +674,98 @@
   .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_180deg\)\] {
     background-image: conic-gradient(orange 0deg,orange 90deg,transparent 180deg);
   }
+  .bg-\[conic-gradient\(orange_0deg\,orange_120deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(orange 0deg,orange 120deg,transparent 90deg);
+  }
   .bg-\[conic-gradient\(orange_10deg\,orange_90deg\,transparent_90deg\)\] {
     background-image: conic-gradient(orange 10deg,orange 90deg,transparent 90deg);
   }
+  .bg-\[conic-gradient\(orange_90deg\,orange_0deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(orange 90deg,orange 0deg,transparent 90deg);
+  }
   .bg-\[conic-gradient\(orange_90deg\,orange_90deg\,transparent_90deg\)\] {
     background-image: conic-gradient(orange 90deg,orange 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(orange_120deg\,orange_90deg\,transparent_90deg\)\] {
+    background-image: conic-gradient(orange 120deg,orange 90deg,transparent 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_0deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
+    background-image: conic-gradient(transparent 0deg,transparent 90deg,orange 90deg,orange 180deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_0deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,#01A0F9 0deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,orange_0deg\,orange_0deg\)\] {
+    background-image: conic-gradient(transparent 90deg,orange 0deg,orange 0deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,orange_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,orange 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,transparent_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 90deg,transparent 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_90deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
+    background-image: conic-gradient(transparent 90deg,transparent 90deg,orange 90deg,orange 180deg);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_0deg\,transparent_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 0deg,transparent 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,orange 180deg);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,transparent_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 90deg,transparent 0deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,transparent_90deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 180deg,transparent 90deg,transparent 90deg,orange 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,\,transparent_0deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,,transparent 0deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,blue_0deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,blue 0deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\#01A0F9_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,#01A0F9 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\#\#01A0F9\]_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[##01A0F9] 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\#01A0F9\]_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[#01A0F9] 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\]_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[] 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg, 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,blue_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,blue 90deg);
+  }
+  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,orange_90deg\)\] {
+    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,orange 90deg);
   }
   .object-contain {
     object-fit: contain;
@@ -930,6 +1071,11 @@
   .sm\:items-center {
     @media (width >= 40rem) {
       align-items: center;
+    }
+  }
+  .sm\:overflow-hidden {
+    @media (width >= 40rem) {
+      overflow: hidden;
     }
   }
   .md\:left-64 {
