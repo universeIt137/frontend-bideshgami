@@ -306,9 +306,6 @@
   .col-span-5 {
     grid-column: span 5 / span 5;
   }
-  .col-span-12 {
-    grid-column: span 12 / span 12;
-  }
   .col-span-16 {
     grid-column: span 16 / span 16;
   }
@@ -1015,9 +1012,6 @@
   }
   .bg-\[\#FFFFFF\] {
     background-color: #FFFFFF;
-  }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
   }
   .bg-background {
     background-color: var(--color-background);
@@ -2036,11 +2030,6 @@
   .lg\:grid-cols-12 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-16 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(16, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-20 {
