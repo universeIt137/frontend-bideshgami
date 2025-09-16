@@ -210,44 +210,17 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-2 {
-    top: calc(var(--spacing) * 2);
-  }
-  .top-4 {
-    top: calc(var(--spacing) * 4);
-  }
-  .top-6 {
-    top: calc(var(--spacing) * 6);
-  }
-  .top-20 {
-    top: calc(var(--spacing) * 20);
-  }
   .-right-20 {
     right: calc(var(--spacing) * -20);
   }
   .right-6 {
     right: calc(var(--spacing) * 6);
   }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
-  }
   .-left-20 {
     left: calc(var(--spacing) * -20);
   }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
-  .left-20 {
-    left: calc(var(--spacing) * 20);
-  }
   .left-52 {
     left: calc(var(--spacing) * 52);
-  }
-  .col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-  .col-span-12 {
-    grid-column: span 12 / span 12;
   }
   .col-span-16 {
     grid-column: span 16 / span 16;
@@ -291,12 +264,6 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
-  .mr-20 {
-    margin-right: calc(var(--spacing) * 20);
-  }
-  .mr-50 {
-    margin-right: calc(var(--spacing) * 50);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
@@ -324,9 +291,6 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
@@ -334,9 +298,6 @@
   .size-6 {
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
-  }
-  .h-0 {
-    height: calc(var(--spacing) * 0);
   }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
@@ -349,12 +310,6 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
-  }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
   }
   .h-32 {
     height: calc(var(--spacing) * 32);
@@ -374,23 +329,14 @@
   .h-full {
     height: 100%;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/3 {
     width: calc(1/3 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -419,35 +365,14 @@
   .max-w-xl {
     max-width: var(--container-xl);
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .origin-bottom-left {
-    transform-origin: bottom left;
-  }
-  .rotate-1 {
-    rotate: 1deg;
-  }
-  .rotate-90 {
-    rotate: 90deg;
-  }
-  .rotate-180 {
-    rotate: 180deg;
   }
   .rotate-270 {
     rotate: 270deg;
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -460,9 +385,6 @@
   }
   .items-start {
     align-items: flex-start;
-  }
-  .justify-baseline {
-    justify-content: baseline;
   }
   .justify-between {
     justify-content: space-between;
@@ -559,10 +481,6 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -586,9 +504,6 @@
   }
   .border-gray-400 {
     border-color: var(--color-gray-400);
-  }
-  .border-white {
-    border-color: var(--color-white);
   }
   .border-white\/30 {
     border-color: color-mix(in srgb, #fff 30%, transparent);
@@ -614,20 +529,11 @@
   .bg-\[\#F56810\] {
     background-color: #F56810;
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
-  .bg-blue-500 {
-    background-color: var(--color-blue-500);
-  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
   .bg-gray-800 {
     background-color: var(--color-gray-800);
-  }
-  .bg-orange-500 {
-    background-color: var(--color-orange-500);
   }
   .bg-primary {
     background-color: var(--color-primary);
@@ -640,147 +546,6 @@
   }
   .bg-\[conic-gradient\(\#01A0F9_0deg\,\#01A0F9_90deg\,transparent_90deg\)\] {
     background-image: conic-gradient(#01A0F9 0deg,#01A0F9 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(\#01A0F9_0deg\,_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(#01A0F9 0deg, 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(\#01A0F9_0deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(#01A0F9 0deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(\#00659E_0deg\,\#01A0F9_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(#00659E 0deg,#01A0F9 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(\#00659E_0deg\,_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(#00659E 0deg, 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(\,transparent_90deg\,orange_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(,transparent 90deg,orange 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(\,transparent_90degorange_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(,transparent 90degorange 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(_0deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient( 0deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_0deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 0deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_60deg\,transparent_0deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 60deg,transparent 0deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_60deg\,transparent_60deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 60deg,transparent 60deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_0deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 0deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_10deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 10deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_60deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 60deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_90deg\,transparent_180deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 90deg,transparent 180deg);
-  }
-  .bg-\[conic-gradient\(orange_0deg\,orange_120deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 0deg,orange 120deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_10deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 10deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_90deg\,orange_0deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 90deg,orange 0deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_90deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 90deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(orange_120deg\,orange_90deg\,transparent_90deg\)\] {
-    background-image: conic-gradient(orange 120deg,orange 90deg,transparent 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_0deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
-    background-image: conic-gradient(transparent 0deg,transparent 90deg,orange 90deg,orange 180deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_0deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,#01A0F9 0deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,\#01A0F9_90deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,#01A0F9 90deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,orange_0deg\,orange_0deg\)\] {
-    background-image: conic-gradient(transparent 90deg,orange 0deg,orange 0deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,orange_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,orange 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,transparent_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 90deg,transparent 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_90deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
-    background-image: conic-gradient(transparent 90deg,transparent 90deg,orange 90deg,orange 180deg);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_0deg\,transparent_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 0deg,transparent 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,orange_90deg\,orange_180deg\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 90deg,orange 90deg,orange 180deg);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,transparent_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 90deg,transparent 0deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_180deg\,transparent_90deg\,transparent_90deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 180deg,transparent 90deg,transparent 90deg,orange 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,\,transparent_0deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,,transparent 0deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,blue_0deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,blue 0deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\#01A0F9_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,#01A0F9 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\#\#01A0F9\]_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[##01A0F9] 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\#01A0F9\]_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[#01A0F9] 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,\[\]_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,[] 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg, 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,blue_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,blue 90deg);
-  }
-  .bg-\[conic-gradient\(transparent_270deg\,transparent_0deg\,transparent_0deg\,orange_90deg\)\] {
-    background-image: conic-gradient(transparent 270deg,transparent 0deg,transparent 0deg,orange 90deg);
   }
   .object-contain {
     object-fit: contain;
@@ -833,9 +598,6 @@
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
-  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -862,17 +624,11 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[1px\] {
-    font-size: 1px;
-  }
   .text-\[9px\] {
     font-size: 9px;
   }
   .text-\[10px\] {
     font-size: 10px;
-  }
-  .text-\[15px\] {
-    font-size: 15px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -885,12 +641,6 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
-  }
-  .text-balance {
-    text-wrap: balance;
-  }
-  .text-wrap {
-    text-wrap: wrap;
   }
   .text-\[\#000000BF\] {
     color: #000000BF;
@@ -910,9 +660,6 @@
   .text-\[\#00000099\] {
     color: #00000099;
   }
-  .text-\[10\] {
-    color: 10;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -921,9 +668,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -936,10 +680,6 @@
   .shadow-xl {
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .drop-shadow-lg {
     --tw-drop-shadow-size: drop-shadow(0 4px 4px var(--tw-drop-shadow-color, rgb(0 0 0 / 0.15)));
@@ -972,15 +712,6 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
-  }
-  .\[clip-path\:inset\(0_0_50\%_0_round_50\%\)\] {
-    clip-path: inset(0 0 50% 0 round 50%);
-  }
-  .\[clip-path\:polygon\(50\%_50\%\,100\%_0\,100\%_100\%\)\] {
-    clip-path: polygon(50% 50%,100% 0,100% 100%);
-  }
-  .\[clip-path\:polygon\(50\%_50\%\,100\%_50\%\,50\%_0\)\] {
-    clip-path: polygon(50% 50%,100% 50%,50% 0);
   }
   .hover\:border-blue-500 {
     &:hover {
@@ -1086,11 +817,6 @@
   .sm\:items-center {
     @media (width >= 40rem) {
       align-items: center;
-    }
-  }
-  .sm\:overflow-hidden {
-    @media (width >= 40rem) {
-      overflow: hidden;
     }
   }
   .md\:left-64 {
@@ -1239,11 +965,6 @@
       grid-column: span 4 / span 4;
     }
   }
-  .lg\:col-span-5 {
-    @media (width >= 64rem) {
-      grid-column: span 5 / span 5;
-    }
-  }
   .lg\:col-span-10 {
     @media (width >= 64rem) {
       grid-column: span 10 / span 10;
@@ -1289,19 +1010,9 @@
       grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-16 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(16, minmax(0, 1fr));
-    }
-  }
   .lg\:grid-cols-20 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(20, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-21 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(21, minmax(0, 1fr));
     }
   }
   .lg\:text-\[32px\] {
@@ -1397,11 +1108,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1480,7 +1186,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
