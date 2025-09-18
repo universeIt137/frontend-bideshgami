@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../dist/output.css">
+    <title>Service Apply Form Page 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body class="bg-secondary">
+<body>
 
     <header>
         <!-- top navbar -->
         <div class=" max-w-7xl mx-auto flex items-center justify-between">
             <!-- logo -->
-            <div class="w-[187px] height-[66px]">
-                <img src="../dist/public/logo.png" />
+            <div class="w-24 py-2">
+                <img src="/image/Logo.png" />
             </div>
             <!-- chat and notification icon -->
             <div class="flex gap-3">
@@ -46,7 +49,7 @@
         </div>
 
         <!-- bottom navbar -->
-        <nav class="bg-primary">
+        <nav class="bg-blue-600">
 
             <div class="max-w-7xl mx-auto px-4">
                 <div class="flex justify-between items-center h-[60px]">
@@ -80,11 +83,10 @@
                         <li><a href="#" class="hover:text-gray-200">About us</a></li>
                         <li><a href="#" class="hover:text-gray-200">En/বাংলা</a></li>
                         <li class="flex items-center space-x-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
-                                fill="none">
-                                <path
-                                    d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
-                                    fill="white" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M5.121 17.804A9.003 9.003 0 0112 15c2.5 0 4.745 1.03 6.364 2.696M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
                             <a href="#" class="hover:text-gray-200">Sign In</a>
                         </li>
@@ -107,10 +109,10 @@
                     <li><a href="#" class="hover:text-gray-200">About us</a></li>
                     <li><a href="#" class="hover:text-gray-200">En/বাংলা</a></li>
                     <li class="flex items-center space-x-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                            <path
-                                d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
-                                fill="white" />
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M5.121 17.804A9.003 9.003 0 0112 15c2.5 0 4.745 1.03 6.364 2.696M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                         <a href="#" class="hover:text-gray-200">Sign In</a>
                     </li>
@@ -119,40 +121,31 @@
         </nav>
     </header>
 
-    <!-- main content login form and hero img -->
-    <main
-        class="flex flex-col-reverse md:flex-row justify-content items-center border border-gray-300 shadow-sm rounded-md p-2">
-        <div class="flex w-1/2 items-center justify-center">
-            <img src="../dist/public/Simplifyingskills.png" alt="main-pic" class="w-3/4 h-auto object-cover" />
-        </div>
-        <div class="flex flex-col justify-start p-8 gap-6  w-[475px]">
+<main class="bg-white h-svh flex justify-center items-center">
+    <div class=" mx-auto w-full sm:w-3/4 md:w-2/4 h-2/3 my-auto rounded-xl shadow-lg flex flex-col justify-center text-center space-y-4 text-gray-800">
+        <h2 class="font-semibold text-4xl text-center my-5">Thank you </h2>
+        <svg class="mx-auto my-5" width="122" height="118" viewBox="0 0 122 118" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M93.1745 10.9465C93.1457 11.0241 93.1432 11.0747 93.116 11.0982C89.4655 14.2998 85.8706 17.562 82.4164 20.9641C82.1432 20.9453 81.9704 20.7818 81.7785 20.6682C78.6948 18.8357 75.4016 17.3818 71.9702 16.3378C69.4794 15.5782 66.9259 15.042 64.3401 14.7355C62.371 14.5043 60.3989 14.3751 58.4167 14.4055C51.8436 14.5071 45.578 15.9406 39.6469 18.7881C29.4317 23.6922 21.4471 32.2932 17.369 42.7631C16.2062 45.7561 15.3724 48.8668 14.8821 52.0404C14.4124 55.071 14.2644 58.1429 14.4408 61.2048C14.7723 67.1244 16.244 72.7502 18.8558 78.0822C24.3797 89.289 34.2121 97.6067 46.1722 101.196C48.4294 101.874 50.73 102.35 53.0669 102.666C55.9276 103.055 58.7993 103.146 61.6734 102.973C67.4124 102.628 72.8845 101.223 78.0898 98.7577C89.3927 93.3983 98.0236 83.4689 101.644 71.5183C102.411 68.9844 102.948 66.3868 103.25 63.7567C103.562 61.0836 103.625 58.3872 103.437 55.7024C102.992 49.3543 101.256 43.3782 98.2277 37.7743C98.1292 37.5929 98.038 37.4077 97.9314 37.2007C98.0089 37.0962 98.072 36.9905 98.1545 36.9032C101.301 33.5621 104.575 30.3552 108.103 27.4142C108.23 27.3079 108.363 27.2078 108.504 27.0974C108.729 27.1759 108.794 27.3898 108.9 27.5562C110.37 29.8819 111.675 32.309 112.802 34.8192C114.676 38.9844 116.05 43.3568 116.897 47.8451C117.283 49.8717 117.555 51.9184 117.713 53.9755C117.838 55.6395 117.926 57.3041 117.914 58.9731C117.9 60.9332 117.791 62.8887 117.587 64.8399C116.955 70.9855 115.378 76.8772 112.857 82.5149C105.801 98.3311 92.0396 110.314 75.4063 115.133C72.7058 115.916 69.9526 116.503 67.168 116.891C64.1344 117.319 61.0721 117.509 58.0089 117.46C55.9051 117.42 53.8048 117.272 51.7161 117.018C32.4024 114.687 15.441 102.776 6.53719 85.5957C3.99957 80.7064 2.16954 75.4807 1.10205 70.0757C0.736998 68.2357 0.476959 66.3793 0.287245 64.5114C-0.0252993 61.4334 -0.0746813 58.3497 0.0997184 55.2664C0.350727 50.8302 1.11693 46.4383 2.38286 42.1795C7.62016 24.5448 20.8583 10.3147 38.0948 3.79765C41.7774 2.40131 45.5928 1.38473 49.4817 0.763714C51.3548 0.465324 53.236 0.257327 55.1288 0.128463C57.3955 -0.0223163 59.669 -0.0403838 61.9379 0.0743527C66.9572 0.3167 71.9243 1.20715 76.7156 2.72358C82.3871 4.51348 87.7547 7.15361 92.6353 10.5539C92.8207 10.6828 93.0001 10.8192 93.1745 10.9465Z"
+                fill="#48B02C" />
+            <path
+                d="M54.3874 63.6053C54.5155 63.4664 54.6215 63.3695 54.7062 63.2565C55.3313 62.4225 55.9528 61.5861 56.5708 60.7474C56.6934 60.5791 56.8015 60.4007 56.894 60.2142C59.8247 54.3627 63.3552 48.8876 67.267 43.652C71.4908 37.9995 76.1086 32.6841 81.019 27.6215C90.1232 18.2326 99.9579 9.68482 110.523 1.97821C110.843 1.74456 111.171 1.52249 111.489 1.28634C111.67 1.14429 111.898 1.07713 112.127 1.09868C113.892 1.2363 115.579 1.65605 117.149 2.48897C119.777 3.88302 121.311 6.07121 121.818 8.99129C122.113 10.695 122.026 12.3971 121.759 14.0952C121.688 14.5456 121.589 14.9916 121.502 15.4436C121.343 15.508 121.213 15.5749 121.076 15.6131C118.815 16.2418 116.697 17.2064 114.651 18.3408C112.239 19.6767 109.978 21.2387 107.801 22.9261C104.584 25.4199 101.583 28.158 98.7027 31.0299C94.5215 35.1989 90.6185 39.619 86.8736 44.1809C80.904 51.452 75.351 59.0328 70.0831 66.8234C68.0987 69.7579 66.1856 72.7406 64.2385 75.7001C64.0088 76.0494 63.8322 76.422 63.6675 76.8073C62.0857 80.5084 59.3075 82.7701 55.3466 83.4113C51.817 83.9824 48.6932 82.9677 46.1181 80.4662C43.4274 77.8523 40.787 75.1862 38.1257 72.5423C35.7454 70.177 33.3656 67.8114 30.9863 65.4454C29.4498 63.9196 28.4653 62.0946 28.0077 59.9808C27.7718 58.8911 27.7514 57.7895 27.8311 56.6829C27.8432 56.5588 27.869 56.4364 27.908 56.3179C28.334 54.9126 28.92 53.5827 29.7833 52.3869C30.88 50.8674 32.2968 49.7909 34.1161 49.2798C35.2953 48.9489 36.4936 48.8857 37.7072 49.0258C38.6214 49.1312 39.5084 49.3452 40.3829 49.6292C40.833 49.7752 41.1877 50.0298 41.515 50.3679C45.6197 54.6042 49.7284 58.8361 53.8411 63.0636C54.0123 63.2403 54.1899 63.4101 54.3874 63.6053Z"
+                fill="#48B02C" />
+        </svg>
 
-            <div class="flex flex-col items-center gap-1">
-                <div class="w-[187px]">
-                    <img src="../dist/public/logo.png" alt="logo" />
-                </div>
+        <p>Your booking has been successfully</p>
 
-                <h1 class="font-bold text-2xl">Log in to your account</h1>
-                <p class="text-sm text-gray-400">Welcome Back Bideshgami! Please Enter Your Login Details</p>
-            </div>
+        <button class="flex justify-center items-center gap-x-3 text-blue-600 font-bold"> <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.78015 8.23325C4.6395 8.38342 4.44877 8.46777 4.24989 8.46777C4.05101 8.46777 3.86028 8.38342 3.71963 8.23325L0.719593 5.02925C0.578988 4.87904 0.5 4.67533 0.5 4.46294C0.5 4.25054 0.578988 4.04684 0.719593 3.89663L3.71963 0.692624C3.86109 0.546715 4.05054 0.465979 4.24719 0.467804C4.44384 0.469629 4.63195 0.553869 4.77101 0.702382C4.91007 0.850894 4.98895 1.05179 4.99066 1.26181C4.99236 1.47183 4.91677 1.67417 4.78015 1.82524L3.06037 3.66194H11.75C11.9489 3.66194 12.1397 3.74633 12.2803 3.89654C12.421 4.04676 12.5 4.2505 12.5 4.46294C12.5 4.67538 12.421 4.87911 12.2803 5.02933C12.1397 5.17955 11.9489 5.26394 11.75 5.26394H3.06037L4.78015 7.10064C4.92075 7.25084 4.99974 7.45455 4.99974 7.66694C4.99974 7.87934 4.92075 8.08304 4.78015 8.23325Z"
+                fill="#0066FF" />
+        </svg>
+ Back to Home</button>
 
-            <form class="flex flex-col gap-6">
-                <input type="text" placeholder="Sandeep.samay@gmail.com"
-                    class="w-full border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 p-2 outline-none" />
+    </div>
+</main>
+   
 
-                <input type="password" placeholder="Password"
-                    class="w-full border-0 border-b-2 border-gray-300 focus:border-blue-500 focus:ring-0 p-2 outline-none" />
-
-                <div class="w-full">
-                    <a href="./forgatPassword.html" class="text-sm hover:underline underline-offset-[3px] float-right cursor-pointer">Forgot
-                        Password? </a>
-                </div>
-                <button class="bg-blue-600 p-3 rounded text-white">Login</button>
-                <p class="text-sm">Don’t have an account? <span
-                        class="hover:underline underline-offset-[3px] cursor-pointer text-blue-600">Sign up!</span></p>
-            </form>
-        </div>
-    </main>
 
     <!-- Footer Section -->
     <footer class="bg-[#007bff] text-white text-sm">
@@ -219,12 +212,12 @@
                             alt="App Store" class="h-10"></a>
                 </div>
                 <h3 class="font-semibold mb-3">Follow Us</h3>
-                <div class="flex items-center space-x-4 text-lg">
-                    <a href="#"><img src="../dist/public/social1.png" alt=""></i></a>
-                    <a href="#"><img src="../dist/public/social2.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social3.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social4.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social5.png" alt=""></a>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

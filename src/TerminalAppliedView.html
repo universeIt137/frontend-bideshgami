@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Applied View</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-100 text-gray-900 font">
+
+
+    <nav class="flex bg-white py-4 justify-between px-4 ">
+        <img src="/image/Logo.png" class="w-[138px] h-[49px]" alt="">
+
+        <div class="flex justify-end gap-x-4 items-center">
+            <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="" class="rounded-full object-cover w-[50px] h-[50px]">
+            <p class="text-blue-600 font-semibold">Abdullah</p>
+        </div>
+    </nav>
+
+
+
+    <div class="grid grid-cols-6 gap-4">
+
+        <div class="w-full col-span-1 h-screen">
+            <!-- sideber  -->
+            <div class="">
+                <!-- Sidebar -->
+                <div class=" lg:block px-4 py-4 lg:col-span-2 bg-white ">
+
+                    <div class="flex items-center w-36 h-36 mx-auto">
+                        <img src="https://img.freepik.com/free-vector/young-man-with-glasses-illustration_1308-174706.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="profile" class="w-full h-full object-cover rounded-full shadow-xl">
+                    </div>
+                    <div class="py-4">
+                        <h4 class="text-center text-xl font-bold">Mahamudul Hasan Fahad</h4>
+                        <p class="text-sm text-center text-[#00000099]">User ID: 01001</p>
+                        <p class="text-sm text-center text-[#00000099]">User Email: yiwad97950@bnsteps.com</p>
+                        <p class="text-sm text-center text-[#00000099]">User Phone No: +8801816-346393</p>
+                    </div>
+
+                    <!-- Navigation Menu -->
+
+                    <nav class="mt-6 space-y-2">
+
+                        <!-- Normal Links -->
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 12l9-9 9 9m-9 9V12m0 0H6v9h12v-9h-6z" />
+                                </svg>
+                            </span>
+                            Home
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 3h7v7H3V3zM14 3h7v7h-7V3zM3 14h7v7H3v-7zM14 14h7v7h-7v-7z" />
+                                </svg>
+                            </span>
+                            Dashboard
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0zM2.458 20.042A9 9 0 0112 15a9 9 0 019.542 5.042M12 15v6" />
+                                </svg>
+                            </span>
+                            My Profile
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                                </svg>
+                            </span>
+                            Create Ads
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </span>
+                            My Ads
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7 8h10M7 12h4m-4 4h6M21 12c0 4.418-4.03 8-9 8s-9-3.582-9-8 4.03-8 9-8 9 3.582 9 8z" />
+                                </svg>
+                            </span>
+                            Message
+                        </a>
+
+                        <!-- Dropdowns: use the same buttons -->
+                        <div>
+                            <button onclick="toggleDropdown('fileMenu')"
+                                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100">
+                                <span class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9-4 9 4M3 7h18" />
+                                    </svg>
+                                    <span> Our All File</span>
+                                </span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="fileMenu" class="ml-6 space-y-1 hidden">
+                                <a href="#" class="block text-sm px-3 py-1">All Customer</a>
+                                <a href="#" class="block text-sm px-3 py-1">Applied Customer</a>
+                                <a href="#" class="block text-sm px-3 py-1">Receive Passport</a>
+                                <a href="#" class="block text-sm px-3 py-1">Under Processing</a>
+                                <a href="#" class="block text-sm px-3 py-1">Visa Approved</a>
+                                <a href="#" class="block text-sm px-3 py-1">Ready For Flight</a>
+                                <a href="#" class="block text-sm px-3 py-1">Success File</a>
+                                <a href="#" class="block text-sm px-3 py-1">Return Passport</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button onclick="toggleDropdown('bookingMenu')"
+                                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100">
+                                <span class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 8c-3.866 0-7 1.343-7 3s3.134 3 7 3 7-1.343 7-3-3.134-3-7-3zM5 11v6a2 2 0 002 2h10a2 2 0 002-2v-6M5 11l7-4 7 4" />
+                                    </svg>
+                                    <span> All Booking File</span>
+                                </span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="bookingMenu" class="ml-6 space-y-1 hidden">
+                                <a href="#" class="block text-sm px-3 py-1">My Booking</a>
+                                <a href="#" class="block text-sm px-3 py-1">Under Processing</a>
+                                <a href="#" class="block text-sm px-3 py-1">Success File</a>
+                                <a href="#" class="block text-sm px-3 py-1">Return Passport</a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button onclick="toggleDropdown('userMenu')"
+                                class="w-full flex items-center justify-between px-3 py-2 rounded hover:bg-blue-100">
+                                <span class="flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16 14a4 4 0 10-8 0 4 4 0 008 0zM12 14v6m0 0H9m3 0h3" />
+                                    </svg>
+                                    <span> User</span>
+                                </span>
+                                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block mr-2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="userMenu" class="ml-6 space-y-1 hidden">
+                                <a href="#" class="block text-sm px-3 py-1">Create User</a>
+                                <a href="#" class="block text-sm px-3 py-1">Manage User</a>
+                                <a href="#" class="block text-sm px-3 py-1">User Activity</a>
+                            </div>
+                        </div>
+
+                        <!-- Other Links -->
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 8c-3 0-5 2-5 5s2 5 5 5 5-2 5-5-2-5-5-5z" />
+                                </svg>
+                            </span>
+                            <span> Commission</span>
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </span>
+                            Check Status
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 8c-3 0-5 1-5 3s2 3 5 3 5-1 5-3-2-3-5-3zM3 12h18" />
+                                </svg>
+                            </span>
+                            Payment
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 11c0-1.104.896-2 2-2s2 .896 2 2-1.104 2-2 2-2-.896-2-2zM4 12c0 4.418 3.582 8 8 8s8-3.582 8-8-3.582-8-8-8-8 3.582-8 8z" />
+                                </svg>
+                            </span>
+                            Change Password
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+                                </svg>
+                            </span>
+                            Terms and Condition
+                        </a>
+
+                        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12H3m0 0l4-4m-4 4 4 4M21 12v6a2 2 0 01-2 2H9" />
+                                </svg>
+                            </span>
+                            Log Out
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- monthly invoice  -->
+        <div class="col-span-5 rounded">
+
+            <div class="bg-white mt-4 p-8">
+                <!-- Header -->
+                <div class="flex justify-between items-center">
+                    <img class="w-[140px]" src="SA.png" alt="">
+                    <h2 class="text-right text-4xl mb-6 font-bold">Monthly Invoices</h2>
+                </div>
+
+
+                <div class="flex justify-end gap-x-10 items-center">
+                    <div class=" text-gray-400">
+                        <p class="text-sm">Invoice</p>
+                        <p class="text-sm">Invoice date:</p>
+                        <p class="text-sm">Due:</p>
+                    </div>
+                    <div class="">
+                        <p class="text-sm">001</p>
+                        <p class="text-sm">Jul 13th,2025</p>
+                        <p class="text-sm">Feb 13th 2025</p>
+                    </div>
+
+                </div>
+
+                <!-- From / Bill to -->
+                <div class="mt-12 text-sm">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="font-bold text-lg">From</h3>
+                            <p class="font-semibold text-2xl mb-2">Saldo Apps</p>
+                            <p>John Smith</p>
+                            <p>wiz@saldoapps.com</p>
+                            <p>8029697597</p>
+                            <p>saldoapps.com</p>
+                            <p>First str, 28-32, Chicago, USA</p>
+                        </div>
+                        <div class="text-right">
+                            <h3 class="font-bold text-lg">Bill to</h3>
+                            <p class="font-semibold text-2xl mb-2">Shepard corp.</p>
+                            <p>shepard@mail.com</p>
+                            <p>8029697597</p>
+                            <p>North str, 32, Chicago, USA</p>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class=" mt-5 text-right">
+                        <h3 class="font-bold">Ship to</h3>
+                        <p>North str, 32, Chicago, USA</p>
+                        <p>Track #: R08029697597</p>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="mt-8 overflow-x-auto">
+                    <table class="min-w-full border-collapse text-sm md:text-base">
+                        <thead>
+                            <tr class="bg-blue-600 text-white text-left">
+                                <th class="p-2 whitespace-nowrap">DESCRIPTION</th>
+                                <th class="p-2 whitespace-nowrap">RATE, CADA</th>
+                                <th class="p-2">QTY</th>
+                                <th class="p-2">TAX</th>
+                                <th class="p-2">DISC</th>
+                                <th class="p-2 whitespace-nowrap">AMOUNT CADA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-2">
+                                    <p class="font-semibold">Prototype</p>
+                                    <p class="text-gray-700 text-xs md:text-sm">
+                                        Prototype-based programming is a style of object-oriented programming
+                                    </p>
+                                </td>
+                                <td class="p-2">20,230,450.00</td>
+                                <td class="p-2">2000</td>
+                                <td class="p-2">20.50%</td>
+                                <td class="p-2">20.50%</td>
+                                <td class="p-2">20,230,450.00</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="p-2 font-semibold">Design</td>
+                                <td class="p-2">20,230,450.00</td>
+                                <td class="p-2">2000</td>
+                                <td class="p-2">20.50%</td>
+                                <td class="p-2">20.50%</td>
+                                <td class="p-2">20,230,450.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!-- Payment + Totals -->
+                <div class="grid md:grid-cols-2 gap-8 mt-8 text-sm items-center">
+                    <!-- Left Side -->
+                    <div>
+                        <h3 class="font-bold text-base">Payment instruction</h3>
+                        <p>Paypal email<br><span class="font-medium">wiz@saldoapps.com</span></p>
+                        <p class="mt-2">Make checks payable to<br><span class="font-medium">John Smith</span></p>
+                        <p class="mt-2">Bank Transfer<br>Routing (ABA): 061120084</p>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="flex flex-col items-center">
+                        <div class="w-full flex justify-between py-2">
+                            <span class="font-bold text-base">Subtotal:</span>
+                            <span class="font-medium text-base">USD 8000.00</span>
+                        </div>
+                        <div class="w-full flex justify-between py-2">
+                            <span>Discount (20%):</span>
+                            <span class="font-medium">USD 0.00</span>
+                        </div>
+                        <div class="w-full flex justify-between py-2">
+                            <span>Shipping Cost:</span>
+                            <span class="font-medium">USD 0.00</span>
+                        </div>
+                        <div class="w-full flex justify-between py-2">
+                            <span>Sales Tax:</span>
+                            <span class="font-medium">USD 450.00</span>
+                        </div>
+                        <div class="w-full flex justify-between py-2 font-bold">
+                            <span>Total:</span>
+                            <span class="font-medium">USD 8,480.00</span>
+                        </div>
+                        <div class="w-full flex justify-between py-2">
+                            <span>Amount Paid:</span>
+                            <span class="font-medium">USD 0.00</span>
+                        </div>
+                        <div class="w-full p-1 bg-blue-50 text-xl font-bold flex justify-between">
+                            <span>Balance Due:</span>
+                            <span>USD 2,0000</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Notes -->
+                <div class="mt-8 text-sm">
+                    <h3 class="font-bold">Notes</h3>
+                    <p>Prototype-based programming is a style of object-oriented <br> programming in which behaviour</p>
+                </div>
+
+                <!-- Signature -->
+                <div class="mt-10 flex justify-end">
+                    <img src="/image/signature.png" alt="Signature" class="w-40" />
+                </div>
+
+            </div>
+
+
+
+            <!-- ver code  -->
+
+            <div class="flex items- bg-white mt-4 p-5 justify-center px-4">
+                <div
+                    class="w-full max-w-[700px] border-2 border-black rounded-3xl p-6 text-center font-semibold bg-white shadow-lg">
+                    <!-- Company -->
+                    <h2 class="md:text-4xl text-2xl font-bold">BIDESHGAMI LTD</h2>
+                    <p class="text-sm md:text-lg">UTTARA AZOMPUR, SECTOR-4, UTTARA DHAKA-1230</p>
+                    <p class="text-sm md:text-lg">CALL:-16*** , Email:-info@bideshgami.com</p>
+
+                    <!-- Date and Time -->
+                    <div class="flex justify-between text-sm md:text-lg font-medium mt-4">
+                        <span>DATE: 29/06/2024</span>
+                        <span>12:08 PM</span>
+                    </div>
+
+                    <!-- From / To -->
+                    <div class="flex justify-between text-sm md:text-lg font-medium mt-2">
+                        <span>FROM:- GAZIPUR</span>
+                        <span>TO:- SOUDI</span>
+                    </div>
+
+                    <!-- Category -->
+                    <p class="text-sm md:text-lg font-medium mt-2">CATEGORY:- WORK PERMIT</p>
+
+                    <!-- Barcode -->
+                    <div class="flex flex-col items-center mt-6">
+                        <div
+                            class="w-[200px] md:w-[280px] h-[50px] md:h-[60px] bg-[url('VR.png')] bg-contain bg-no-repeat">
+                        </div>
+                        <p class="text-sm md:text-lg mt-2">(10) ABC123 (21) 0001</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mx-auto bg-blue-500 my-5 text-white px-9 py-1.5 flex justify-center">Print</button>
+        </div>
+
+    </div>
+
+
+
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#007bff] mt-10 text-white text-sm">
+        <div class="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Discover -->
+            <div>
+                <h3 class="font-semibold mb-3">Discovr</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Terms & conditions</a></li>
+                    <li><a href="#" class="hover:underline">Career</a></li>
+                    <li><a href="#" class="hover:underline">Refund Policy</a></li>
+                    <li><a href="#" class="hover:underline">EMI Policy</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Payment Methods -->
+            <div>
+                <h3 class="font-semibold mb-3">Payment Methods</h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <svg viewBox="0 0 135 119" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="135.000000" height="119.000000" fill="none"
+                        customFrame="#000000">
+                        <rect id="PngItem_479383 1" width="135.000000" height="119.000000" x="0.000000" y="0.000000"
+                            fill="url(#pattern_3)" />
+                    </svg>
+
+
+                </div>
+            </div>
+
+            <!-- Need Help -->
+            <div>
+                <h3 class="font-semibold mb-3">Need Help ?</h3>
+                <p class="mb-3 leading-relaxed">
+                    We are Always here for you!<br>
+                    Knock us on Messenger anytime<br>
+                    or Call our Hotline (10AM – 10PM).
+                </p>
+                <p><span class="font-semibold">Contact</span><br>
+                    <a href="mailto:info@bideshgami.com" class="hover:underline">info@bideshgami.com</a><br>
+                    +0930220202219
+                </p>
+            </div>
+
+            <!-- App & Social -->
+            <div>
+                <h3 class="font-semibold mb-3">Download our app</h3>
+                <div class="flex flex-col gap-3 mb-5">
+                    <a href="#"><img src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png"
+                            alt="Google Play" class="h-10"></a>
+                    <a href="#"><img
+                            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="App Store" class="h-10"></a>
+                </div>
+                <h3 class="font-semibold mb-3">Follow Us</h3>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-white/20 mt-6">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+
+                </div>
+                <p class="mt-3 md:mt-0 text-xs">© Copyright Bideshgami.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
