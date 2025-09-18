@@ -27,6 +27,10 @@
                 reader.readAsDataURL(file);
             }
         }
+
+        function openFile() {
+            document.getElementById("fileInput").click();
+        }
     </script>
 
     <style>
@@ -298,7 +302,8 @@
                 <h3 class="md:text-2xl font-semibold text-xl">Agents Details</h3>
                 <div class="bg-white w-full p-2 md:p-4 md:w-9/10 flex flex-col gap-4 items-center justify-center">
                     <h3 class="md:text-2xl md:mt-2 font-semibold text-xl">Agent Information</h3>
-                    <div class="border w-full border-[#777777] flex flex-col gap-4 items-center justify-center md:p-10 p-3">
+                    <div
+                        class="border w-full border-[#777777] flex flex-col gap-4 items-center justify-center md:p-10 p-3">
                         <img src="../dist/public/agentDetails.png" alt="">
                         <div class="flex flex-col gap-1 items-start  w-full">
                             <h3 class="text-[#0066FF] font-bold text-xl md:text-2xl ">Basic Information</h3>
@@ -308,19 +313,74 @@
                             <p class="font-medium text-[#000000B2]">Phone Number <span>:</span> Fahad</p>
                             <p class="font-medium text-[#000000B2]">Email <span>:</span> Fahad</p>
                             <p class="font-medium text-[#000000B2]">NID Number <span>:</span> Fahad</p>
-                           <h3 class="text-[#0066FF] font-bold text-xl md:text-2xl ">Document</h3>
-                    </div>
-                    
-                        <div></div>
-                          <div class="flex gap-4 mt-2 justify-center">
-                                <button
-                                    class="bg-[#008000] px-2 pb-2 pt-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
-                                <button
-                                    class="bg-[#FF0000] px-2 pb-2 pt-1 text-center rounded-sm text-sm font-medium text-white">Reject</button>
+                            <h3 class="text-[#0066FF] font-bold text-xl md:text-2xl ">Document</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-4xl">
+
+                            <!-- Hidden Input -->
+                            <input type="file" id="fileInput" class="hidden">
+
+                            <!-- Photo Card -->
+                            <div class="flex flex-col  gap-2 items-center justify-center">
+                                <p class="font-semibold text-lg text-[#000000CC]">View Your Photo</p>
+                                <div onclick="openFile()"
+                                    class="flex flex-col items-center w-full justify-center p-6 bg-[#E6F0FF] rounded-md shadow cursor-pointer hover:bg-blue-200 transition">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#00000066]"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 16l4-4 4 4m0 0l4-4 4 4m-8-4v12" />
+                                    </svg>
+                                    <p class="mt-2 font-medium text-[#00000066]">View your Photo</p>
+                                </div>
                             </div>
+
+                            <!-- NID Card -->
+                            <div class="flex flex-col gap-2 items-center justify-center">
+                                <p class="font-semibold text-lg text-[#000000CC]">View NID</p>
+                                <div onclick="openFile()"
+                                    class="flex flex-col w-full items-center justify-center p-6 bg-[#E6F0FF] rounded-md shadow cursor-pointer hover:bg-blue-200 transition">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#00000066]"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <rect x="3" y="4" width="18" height="16" rx="2" ry="2" stroke-width="2"
+                                            stroke="currentColor" fill="none" />
+                                        <circle cx="9" cy="12" r="2" stroke="currentColor" stroke-width="2"
+                                            fill="none" />
+                                        <path d="M15 12h4" stroke="currentColor" stroke-width="2" />
+                                    </svg>
+                                    <p class="mt-2 font-medium text-[#00000066]">View NID</p>
+                                </div>
+                            </div>
+
+
+                            <!-- Trade License -->
+                            <div class="flex flex-col gap-2 items-center justify-center">
+                                <p class="font-semibold text-lg text-[#000000CC]">View Trade Licanse</p>
+                                <div onclick="openFile()"
+                                    class="flex flex-col w-full items-center justify-center p-6 bg-[#E6F0FF] rounded-md shadow cursor-pointer hover:bg-blue-200 transition">
+                                    <!-- SVG Icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[#00000066]"
+                                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path d="M9 12h6M9 16h6M13 8h6M3 4h18v16H3z" stroke-width="2"
+                                            stroke="currentColor" fill="none" />
+                                    </svg>
+                                    <p class="mt-2 font-medium text-[#00000066]">View Trade License</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex gap-4 mt-2 justify-center">
+                            <button
+                                class="bg-[#008000] px-2 pb-2 pt-1 text-center rounded-sm text-sm font-medium text-white">Approve</button>
+                            <button
+                                class="bg-[#FF0000] px-2 pb-2 pt-1 text-center rounded-sm text-sm font-medium text-white">Reject</button>
+                        </div>
                     </div>
                 </div>
-                    
+
             </div>
 
 
