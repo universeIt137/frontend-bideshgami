@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile edit page</title>
+    <title>My favourite card page</title>
     <link rel="stylesheet" href="../dist/output.css">
 
 
@@ -141,8 +141,7 @@
         </div>
 
         <!-- Sidebar -->
-        <aside id="sidebar"
-            class="fixed md:static top-0 left-0 w-64 h-full md:h-auto bg-white rounded-r-md shadow-lg p-4 z-50
+        <aside id="sidebar" class="fixed md:static top-0 left-0 w-64 h-full md:h-auto bg-white rounded-r-md shadow-lg p-4 z-50
          transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
             <!-- Profile -->
             <div class="text-center mb-6">
@@ -323,165 +322,205 @@
         <!-- Main content -->
         <div class="w-full bg-white rounded-lg shadow-sm p-6">
 
-
-
-            <!-- Profile Header -->
-            <div class="flex items-start gap-4">
-                <div class="flex items-center gap-4">
-                    <img src="../dist/public/profile.png" alt="Profile"
-                        class="w-20 h-20 rounded-full object-cover border" />
-                </div>
-                <div>
-                    <h1 class="text-sm md:text-xl lg:text-2xl font-semibold mb-2">Mahamudul Hasan Fahad</h1>
-                    <button
-                        class="flex gap-2 px-2 py-1 text-xs md:text-sm border-2 border-primary text-primary rounded-md hover:bg-blue-100">
-                        <svg width="28" height="25" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="bg-primary p-1 rounded-full">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.75 3.28757C2.02065 3.28757 1.32118 3.58126 0.805456 4.10403C0.289731 4.6268 0 5.33583 0 6.07514V17.2254C0 17.9647 0.289731 18.6737 0.805456 19.1965C1.32118 19.7193 2.02065 20.013 2.75 20.013H19.25C19.9793 20.013 20.6788 19.7193 21.1945 19.1965C21.7103 18.6737 22 17.9647 22 17.2254V6.07514C22 5.33583 21.7103 4.6268 21.1945 4.10403C20.6788 3.58126 19.9793 3.28757 19.25 3.28757H17.0692C16.7046 3.28749 16.3549 3.14059 16.0971 2.87919L14.5558 1.31676C14.0401 0.793951 13.3408 0.500158 12.6115 0.5H9.3885C8.65921 0.500158 7.95985 0.793951 7.44425 1.31676L5.90288 2.87919C5.64507 3.14059 5.29539 3.28749 4.93075 3.28757H2.75ZM11 15.8316C11.5417 15.8316 12.0781 15.7235 12.5786 15.5133C13.079 15.3032 13.5338 14.9952 13.9168 14.6069C14.2999 14.2187 14.6037 13.7577 14.811 13.2504C15.0183 12.7431 15.125 12.1994 15.125 11.6503C15.125 11.1012 15.0183 10.5574 14.811 10.0501C14.6037 9.54283 14.2999 9.08189 13.9168 8.69361C13.5338 8.30534 13.079 7.99734 12.5786 7.78721C12.0781 7.57707 11.5417 7.46892 11 7.46892C9.90598 7.46892 8.85677 7.90945 8.08318 8.69361C7.3096 9.47777 6.875 10.5413 6.875 11.6503C6.875 12.7592 7.3096 13.8228 8.08318 14.6069C8.85677 15.3911 9.90598 15.8316 11 15.8316Z"
-                                fill="white" />
-                        </svg>
-
-                        Upload Photo
-                    </button>
-                </div>
+            <div class="px-6 py-4 flex justify-between items-center">
+                <h2 class="text-xl font-semibold">FAVORITE <span class="text-primary">LIST</span></h2>
             </div>
-
-            <!-- Personal Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Personal Details</h2>
-                <p class="text-sm text-gray-500">
-                    As mentioned on your passport or government approved IDs
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">First Name</label>
-                        <input type="text" placeholder="First Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Last Name</label>
-                        <input type="text" placeholder="Last Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Gender</label>
-                        <input type="text" placeholder="Gender"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
-                        <input type="date" placeholder="Agent/Shop Address"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Contact Details</h2>
-                <p class="text-sm text-gray-500">
-                    Receive booking confirmation & updates
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
-                            Contact Number
-                        </label>
-
-                        <div class="w-full flex items-center border border-gray-300 focus-within:border-primary rounded-md px-3 py-1">
-
-                            <!-- Country Dropdown -->
-                            <div class="flex items-center px-2 border-r bg-gray-50">
-                                Ban
-                            </div>
-
-                            <!-- Country Code -->
-                            <span class="px-2 text-gray-700 text-sm">+880</span>
-
-                            <!-- Input -->
-                            <input type="text" id="phone" placeholder="Enter phone number"
-                                class="w-full flex-1 px-2 py-2 text-sm focus:outline-none" />
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+                <!-- Card -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg1.png" class="w-full h-40 object-cover">
+                    <div class="p-4 relative">
+                        <div class="absolute -top-10 text-sm text-primary flex justify-center w-full"><span
+                                class=" bg-blue-100  px-2 py-1 rounded-full">Delegate Interview</span>
                         </div>
+                        <h3 class="mt-2 font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Address</label>
-                        <input type="text" placeholder="Address"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                </div>
+                <!-- Repeat -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg2.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Country</label>
-                        <input type="text" placeholder="Country"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                </div>
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg3.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">District</label>
-                        <input type="text" placeholder="District"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                </div>
+
+
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg1.png" class="w-full h-40 object-cover">
+                    <div class="p-4 relative">
+                        <div class="absolute -top-10 text-sm text-primary flex justify-center w-full"><span
+                                class=" bg-blue-100  px-2 py-1 rounded-full">Delegate Interview</span>
+                        </div>
+                        <h3 class="mt-2 font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Gender</label>
-                        <input type="text" placeholder="Gender"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                </div>
+                <!-- Repeat -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg2.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Police Station</label>
-                        <input type="text" placeholder="Police station"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                </div>
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg3.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
+                    </div>
+                </div>
+
+
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg1.png" class="w-full h-40 object-cover">
+                    <div class="p-4 relative">
+                        <div class="absolute -top-10 text-sm text-primary flex justify-center w-full"><span
+                                class=" bg-blue-100  px-2 py-1 rounded-full">Delegate Interview</span>
+                        </div>
+                        <h3 class="mt-2 font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
+                    </div>
+                </div>
+                <!-- Repeat -->
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg2.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="../dist/public/cardImg3.png" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Malaysia Work Permit</h3>
+                        <p class="text-primary font-bold">15,000 BDT</p>
+                        <p class="text-xs text-gray-500 mt-1 float-right">20 Day Ago</p>
+                        <button class="w-full mt-3 py-2 rounded-lg flex gap-3 justify-center items-center">View Details
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.293 5.29303C12.4805 5.10556 12.7348 5.00024 13 5.00024C13.2652 5.00024 13.5195 5.10556 13.707 5.29303L17.707 9.29303C17.8945 9.48056 17.9998 9.73487 17.9998 10C17.9998 10.2652 17.8945 10.5195 17.707 10.707L13.707 14.707C13.5184 14.8892 13.2658 14.99 13.0036 14.9877C12.7414 14.9854 12.4906 14.8803 12.3052 14.6948C12.1198 14.5094 12.0146 14.2586 12.0123 13.9964C12.01 13.7342 12.1108 13.4816 12.293 13.293L14.586 11H3C2.73478 11 2.48043 10.8947 2.29289 10.7071C2.10536 10.5196 2 10.2652 2 10C2 9.73481 2.10536 9.48046 2.29289 9.29292C2.48043 9.10539 2.73478 9.00003 3 9.00003H14.586L12.293 6.70703C12.1055 6.5195 12.0002 6.26519 12.0002 6.00003C12.0002 5.73487 12.1055 5.48056 12.293 5.29303Z"
+                                    fill="#0066FF" />
+                            </svg>
+                        </button>
+                        <hr class="border-b-4 rounded border-primary my-2">
                     </div>
                 </div>
             </div>
 
-            <!-- Passport Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Passpost infomation</h2>
-                <p class="text-sm text-gray-500">
-                    Travelers holding passport can fill up the the below form which will save more time during
-                    flight
-                    booking. </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Number</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Expiry Date</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Issue Date</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex justify-center gap-4 mt-8">
-                <button class="flex items-center gap-1 px-2 py-1 text-sm border-2 rounded-md hover:bg-gray-100">
-                    <svg width="10" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.20679 9.70057C6.01926 9.88804 5.76495 9.99336 5.49979 9.99336C5.23462 9.99336 4.98031 9.88804 4.79279 9.70057L0.792786 5.70057C0.605315 5.51304 0.5 5.25874 0.5 4.99357C0.5 4.72841 0.605315 4.4741 0.792786 4.28657L4.79279 0.286572C4.98139 0.104414 5.23399 0.00361876 5.49619 0.00589718C5.75838 0.0081756 6.0092 0.113345 6.1946 0.298753C6.38001 0.484161 6.48518 0.734973 6.48746 0.99717C6.48974 1.25937 6.38894 1.51197 6.20679 1.70057L3.91379 3.99357H15.4998C15.765 3.99357 16.0194 4.09893 16.2069 4.28646C16.3944 4.474 16.4998 4.72835 16.4998 4.99357C16.4998 5.25879 16.3944 5.51314 16.2069 5.70068C16.0194 5.88821 15.765 5.99357 15.4998 5.99357H3.91379L6.20679 8.28657C6.39426 8.4741 6.49957 8.72841 6.49957 8.99357C6.49957 9.25874 6.39426 9.51304 6.20679 9.70057Z"
-                            fill="#1C1C1C" />
+            <!-- Pagination -->
+            <div class="flex justify-end mt-6">
+                <button class="px-3 py-1 bg-white border rounded-bl-sm rounded-tl-sm hover:bg-gray-100 border-gray-300">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.04037 9.19206L0.957031 5.10872L5.04037 1.02539" stroke="#9B98B4" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-
-                    Back
                 </button>
+                <button class="px-3 py-1.5  bg-primary border border-gray-300 text-white">1</button>
+                <button class="px-3 py-1 border hover:bg-gray-10 border-gray-300 hover:bg-gray-100">2</button>
+                <button class="px-3 py-1 bg-white border hover:bg-gray-100 border-gray-300">3</button>
+                <button class="px-3 py-1 rounded-br-sm rounded-tr-sm bg-white border hover:bg-gray-100 border-gray-300">
+                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.789062 9.19206L4.8724 5.10872L0.789062 1.02539" stroke="#79828D" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
 
-                <button
-                    class="flex gap-2 px-4 py-1 text-sm border-2 border-primary text-primary rounded-md hover:bg-blue-100">
-
-                    save
                 </button>
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- Footer Section -->

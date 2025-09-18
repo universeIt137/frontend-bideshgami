@@ -13,14 +13,111 @@
 <body>
 
     <!-- Header -->
-    <header class="bg-white shadow flex items-center justify-between px-6 py-3 border-b border-blue-500">
-        <div class="w-[187px] height-[66px]">
-            <img src="../dist/public/logo.png" />
+    <header>
+        <!-- top navbar -->
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- logo -->
+            <div class="w-[187px] height-[66px]">
+                <img src="../dist/public/logo.png" />
+            </div>
+            <!-- chat and notification icon -->
+            <div class="flex gap-3">
+                <svg viewBox="0 0 16.4141 15.353" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="16.414062" height="15.352966" fill="none"
+                    customFrame="#000000">
+                    <g id="Group 240">
+                        <path id="Vector"
+                            d="M0 2.11765C-2.35106e-16 1.55601 0.223109 1.01738 0.620244 0.620244C1.01738 0.223109 1.55601 4.70212e-16 2.11765 0L9.52941 0C10.091 4.70212e-16 10.6297 0.223109 11.0268 0.620244C11.4239 1.01738 11.6471 1.55601 11.6471 2.11765L11.6471 6.35294C11.6471 6.91458 11.4239 7.45321 11.0268 7.85034C10.6297 8.24748 10.091 8.47059 9.52941 8.47059L7.41176 8.47059L4.23529 11.6471L4.23529 8.47059L2.11765 8.47059C1.55601 8.47059 1.01738 8.24748 0.620244 7.85034C0.223109 7.45321 4.70212e-16 6.91458 0 6.35294L0 2.11765Z"
+                            fill="rgb(0,102,255)" fill-rule="nonzero" />
+                        <path id="Vector"
+                            d="M13.2162 3.70593L13.2162 5.82358C13.2162 6.94685 12.7672 8.02411 11.9679 8.81838C11.1687 9.61266 10.0847 10.0589 8.95445 10.0589L7.70577 10.0589L5.82422 11.9298C6.12254 12.0876 6.46241 12.1765 6.82359 12.1765L8.95445 12.1765L12.1507 15.353L12.1507 12.1765L14.2816 12.1765C14.8467 12.1765 15.3887 11.9534 15.7883 11.5563C16.188 11.1591 16.4125 10.6205 16.4125 10.0589L16.4125 5.82358C16.4125 5.26194 16.188 4.72331 15.7883 4.32618C15.3887 3.92904 14.8467 3.70593 14.2816 3.70593L13.2162 3.70593Z"
+                            fill="rgb(0,102,255)" fill-rule="nonzero" />
+                    </g>
+                </svg>
+
+                <svg viewBox="0 0 20.1172 20.1177" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20.117188" height="20.117676" fill="none">
+                    <rect id="Frame" width="20.117647" height="20.117647" x="0.000000" y="0.000000"
+                        fill="rgb(255,255,255)" fill-opacity="0" />
+                    <path id="Vector"
+                        d="M10.0561 18.2318C10.9511 18.2318 11.6832 17.4963 11.6832 16.5973L8.42889 16.5973C8.42889 17.4963 9.16103 18.2318 10.0561 18.2318ZM15.3444 13.3281L15.3444 8.83311C15.3444 6.3404 13.5952 4.21556 11.2764 3.68421L11.2764 3.11215C11.2764 2.41738 10.7477 1.88623 10.0561 1.88623C9.36444 1.88623 8.83569 2.41738 8.83569 3.11215L8.83569 3.68421C6.51685 4.21556 4.76776 6.3404 4.76776 8.83311L4.76776 13.3281L3.14062 14.9627L3.14062 15.78L16.9715 15.78L16.9715 14.9627L15.3444 13.3281Z"
+                        fill="rgb(0,102,255)" fill-rule="nonzero" />
+                </svg>
+            </div>
         </div>
-        <div class="flex items-center space-x-3">
-            <img src="../dist/public/user.png" alt="logo" class="w-8 h-8 rounded-full">
-            <span class="text-gray-700 font-medium text-xs">Bideshgami Agent</span>
-        </div>
+
+        <!-- bottom navbar -->
+        <nav class="bg-primary">
+
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between items-center h-[60px]">
+
+                    <!-- Hamburger / Close Button -->
+                    <button id="toggle-btn" class="text-white focus:outline-none lg:hidden">
+                        <!-- Hamburger Icon -->
+                        <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 block" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <!-- X Icon -->
+                        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <!-- Nav Links (desktop) -->
+                    <ul id="navlinks"
+                        class="hidden lg:flex text-white items-center space-x-4 md:space-x-8 md:font-medium font-normal">
+                        <li><a href="./index.html" class="hover:text-gray-200">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Air-Ticket</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Work Permit</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Student</a></li>
+                        <li><a href="./hajjAndUmrah.html" class="hover:text-gray-200">Hajj & Umrah</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Visa Processing</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Tour Package</a></li>
+                        <li><a href="#" class="hover:text-gray-200">Hotel Booking</a></li>
+                        <li><a href="#" class="hover:text-gray-200">About us</a></li>
+                        <li><a href="#" class="hover:text-gray-200">En/বাংলা</a></li>
+                        <li class="flex items-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                                fill="none">
+                                <path
+                                    d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
+                                    fill="white" />
+                            </svg>
+                            <a href="#" class="hover:text-gray-200">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out lg:hidden bg-blue-700">
+                <ul class="flex flex-col text-white space-y-2 p-4">
+                    <li><a href="./index.html" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Air-Ticket</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Work Permit</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Student</a></li>
+                    <li><a href="./hajjAndUmrah.html" class="hover:text-gray-200">Hajj & Umrah</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Visa Processing</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Tour Package</a></li>
+                    <li><a href="#" class="hover:text-gray-200">Hotel Booking</a></li>
+                    <li><a href="#" class="hover:text-gray-200">About us</a></li>
+                    <li><a href="#" class="hover:text-gray-200">En/বাংলা</a></li>
+                    <li class="flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                            <path
+                                d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM6 8c1.592 0 3.118.632 4.243 1.757C11.368 10.883 12 12.409 12 14H0c0-1.591.632-3.117 1.757-4.243A5.985 5.985 0 0 1 6 8Zm8-4a1 1 0 0 0-2 0v1h-1a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0V7h1a1 1 0 1 0 0-2h-1V4Z"
+                                fill="white" />
+                        </svg>
+                        <a href="#" class="hover:text-gray-200">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <!-- Main layout -->

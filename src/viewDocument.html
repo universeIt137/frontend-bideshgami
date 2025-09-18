@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My profile edit page</title>
+    <title>View Document page</title>
     <link rel="stylesheet" href="../dist/output.css">
 
 
@@ -141,8 +141,7 @@
         </div>
 
         <!-- Sidebar -->
-        <aside id="sidebar"
-            class="fixed md:static top-0 left-0 w-64 h-full md:h-auto bg-white rounded-r-md shadow-lg p-4 z-50
+        <aside id="sidebar" class="fixed md:static top-0 left-0 w-64 bg-white rounded-r-md shadow-lg p-4 z-50
          transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out">
             <!-- Profile -->
             <div class="text-center mb-6">
@@ -321,167 +320,30 @@
         </aside>
 
         <!-- Main content -->
-        <div class="w-full bg-white rounded-lg shadow-sm p-6">
-
-
-
-            <!-- Profile Header -->
-            <div class="flex items-start gap-4">
-                <div class="flex items-center gap-4">
-                    <img src="../dist/public/profile.png" alt="Profile"
-                        class="w-20 h-20 rounded-full object-cover border" />
-                </div>
-                <div>
-                    <h1 class="text-sm md:text-xl lg:text-2xl font-semibold mb-2">Mahamudul Hasan Fahad</h1>
-                    <button
-                        class="flex gap-2 px-2 py-1 text-xs md:text-sm border-2 border-primary text-primary rounded-md hover:bg-blue-100">
-                        <svg width="28" height="25" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="bg-primary p-1 rounded-full">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M2.75 3.28757C2.02065 3.28757 1.32118 3.58126 0.805456 4.10403C0.289731 4.6268 0 5.33583 0 6.07514V17.2254C0 17.9647 0.289731 18.6737 0.805456 19.1965C1.32118 19.7193 2.02065 20.013 2.75 20.013H19.25C19.9793 20.013 20.6788 19.7193 21.1945 19.1965C21.7103 18.6737 22 17.9647 22 17.2254V6.07514C22 5.33583 21.7103 4.6268 21.1945 4.10403C20.6788 3.58126 19.9793 3.28757 19.25 3.28757H17.0692C16.7046 3.28749 16.3549 3.14059 16.0971 2.87919L14.5558 1.31676C14.0401 0.793951 13.3408 0.500158 12.6115 0.5H9.3885C8.65921 0.500158 7.95985 0.793951 7.44425 1.31676L5.90288 2.87919C5.64507 3.14059 5.29539 3.28749 4.93075 3.28757H2.75ZM11 15.8316C11.5417 15.8316 12.0781 15.7235 12.5786 15.5133C13.079 15.3032 13.5338 14.9952 13.9168 14.6069C14.2999 14.2187 14.6037 13.7577 14.811 13.2504C15.0183 12.7431 15.125 12.1994 15.125 11.6503C15.125 11.1012 15.0183 10.5574 14.811 10.0501C14.6037 9.54283 14.2999 9.08189 13.9168 8.69361C13.5338 8.30534 13.079 7.99734 12.5786 7.78721C12.0781 7.57707 11.5417 7.46892 11 7.46892C9.90598 7.46892 8.85677 7.90945 8.08318 8.69361C7.3096 9.47777 6.875 10.5413 6.875 11.6503C6.875 12.7592 7.3096 13.8228 8.08318 14.6069C8.85677 15.3911 9.90598 15.8316 11 15.8316Z"
-                                fill="white" />
-                        </svg>
-
-                        Upload Photo
-                    </button>
-                </div>
-            </div>
-
-            <!-- Personal Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Personal Details</h2>
-                <p class="text-sm text-gray-500">
-                    As mentioned on your passport or government approved IDs
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">First Name</label>
-                        <input type="text" placeholder="First Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Last Name</label>
-                        <input type="text" placeholder="Last Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Gender</label>
-                        <input type="text" placeholder="Gender"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
-                        <input type="date" placeholder="Agent/Shop Address"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Contact Details</h2>
-                <p class="text-sm text-gray-500">
-                    Receive booking confirmation & updates
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
-                            Contact Number
-                        </label>
-
-                        <div class="w-full flex items-center border border-gray-300 focus-within:border-primary rounded-md px-3 py-1">
-
-                            <!-- Country Dropdown -->
-                            <div class="flex items-center px-2 border-r bg-gray-50">
-                                Ban
-                            </div>
-
-                            <!-- Country Code -->
-                            <span class="px-2 text-gray-700 text-sm">+880</span>
-
-                            <!-- Input -->
-                            <input type="text" id="phone" placeholder="Enter phone number"
-                                class="w-full flex-1 px-2 py-2 text-sm focus:outline-none" />
-                        </div>
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Address</label>
-                        <input type="text" placeholder="Address"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Country</label>
-                        <input type="text" placeholder="Country"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">District</label>
-                        <input type="text" placeholder="District"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Gender</label>
-                        <input type="text" placeholder="Gender"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Police Station</label>
-                        <input type="text" placeholder="Police station"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Passport Info -->
-            <div class="mt-4 border border-gray-400 rounded-md p-4">
-                <h2 class="text-lg font-medium">Passpost infomation</h2>
-                <p class="text-sm text-gray-500">
-                    Travelers holding passport can fill up the the below form which will save more time during
-                    flight
-                    booking. </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Number</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Expiry Date</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Passport Issue Date</label>
-                        <input type="text" placeholder="Passport Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="flex justify-center gap-4 mt-8">
-                <button class="flex items-center gap-1 px-2 py-1 text-sm border-2 rounded-md hover:bg-gray-100">
-                    <svg width="10" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="w-full flex flex-col items-center gap-4 rounded-lg">
+            <div class="bg-primary w-full flex justify-between items-center p-1">
+                <span> Visa PDF</span>
+                <svg width="20" height="15" viewBox="0 0 46 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1309_3133)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.20679 9.70057C6.01926 9.88804 5.76495 9.99336 5.49979 9.99336C5.23462 9.99336 4.98031 9.88804 4.79279 9.70057L0.792786 5.70057C0.605315 5.51304 0.5 5.25874 0.5 4.99357C0.5 4.72841 0.605315 4.4741 0.792786 4.28657L4.79279 0.286572C4.98139 0.104414 5.23399 0.00361876 5.49619 0.00589718C5.75838 0.0081756 6.0092 0.113345 6.1946 0.298753C6.38001 0.484161 6.48518 0.734973 6.48746 0.99717C6.48974 1.25937 6.38894 1.51197 6.20679 1.70057L3.91379 3.99357H15.4998C15.765 3.99357 16.0194 4.09893 16.2069 4.28646C16.3944 4.474 16.4998 4.72835 16.4998 4.99357C16.4998 5.25879 16.3944 5.51314 16.2069 5.70068C16.0194 5.88821 15.765 5.99357 15.4998 5.99357H3.91379L6.20679 8.28657C6.39426 8.4741 6.49957 8.72841 6.49957 8.99357C6.49957 9.25874 6.39426 9.51304 6.20679 9.70057Z"
-                            fill="#1C1C1C" />
-                    </svg>
+                            d="M24.3566 22.1047C23.9972 22.464 23.5098 22.6659 23.0016 22.6659C22.4933 22.6659 22.0059 22.464 21.6465 22.1047L10.8039 11.2621C10.6208 11.0853 10.4748 10.8738 10.3744 10.64C10.2739 10.4061 10.221 10.1546 10.2188 9.90012C10.2166 9.64562 10.2651 9.39324 10.3615 9.15769C10.4578 8.92214 10.6002 8.70814 10.7801 8.52818C10.9601 8.34821 11.1741 8.2059 11.4096 8.10952C11.6452 8.01315 11.8976 7.96466 12.1521 7.96687C12.4066 7.96908 12.6581 8.02195 12.8919 8.12241C13.1258 8.22286 13.3372 8.36887 13.5141 8.55193L23.0016 18.0394L32.4891 8.55193C32.8505 8.2028 33.3347 8.00961 33.8372 8.01397C34.3398 8.01834 34.8205 8.21991 35.1759 8.57528C35.5312 8.93065 35.7328 9.41137 35.7372 9.91391C35.7416 10.4165 35.5484 10.9006 35.1992 11.2621L24.3566 22.1047Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1309_3133">
+                            <rect width="46" height="34" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
 
-
-                    Back
-                </button>
-
-                <button
-                    class="flex gap-2 px-4 py-1 text-sm border-2 border-primary text-primary rounded-md hover:bg-blue-100">
-
-                    save
-                </button>
             </div>
-        </div>
 
+            <img src="../dist/public/pdf image.jpg" alt="" class="drop-shadow-sm">
+            <button class="block bg-primary w-40 text-sm px-4 py-1 text-white rounded-sm">
+                Download PDF
+            </button>
+
+        </div>
     </div>
 
     <!-- Footer Section -->
