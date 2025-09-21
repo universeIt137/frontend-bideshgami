@@ -639,12 +639,6 @@
   .max-h-\[500px\] {
     max-height: 500px;
   }
-  .min-h-\[10px\] {
-    min-height: 10px;
-  }
-  .min-h-\[20px\] {
-    min-height: 20px;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -1640,16 +1634,6 @@
     --tw-outline-style: none;
     outline-style: none;
   }
-  .group-hover\:line-clamp-2 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-      }
-    }
-  }
   .group-hover\:line-clamp-none {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1677,16 +1661,6 @@
       --tw-ring-color: var(--color-primary);
       @supports (color: color-mix(in lab, red, red)) {
         --tw-ring-color: color-mix(in oklab, var(--color-primary) 60%, transparent);
-      }
-    }
-  }
-  .hover\:line-clamp-none {
-    &:hover {
-      @media (hover: hover) {
-        overflow: visible;
-        display: block;
-        -webkit-box-orient: horizontal;
-        -webkit-line-clamp: unset;
       }
     }
   }
