@@ -4,13 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MerchantForm</title>
+    <title>Tour Package Pack</title>
+
     <link rel="stylesheet" href="../dist/output.css">
+
 </head>
+
 <body>
+
     <header>
         <!-- top navbar -->
-        <div class=" max-w-7xl mx-auto flex items-center justify-between">
+        <div class=" max-w-7xl mx-auto  flex items-center justify-between">
             <!-- logo -->
             <div class="w-[187px] height-[66px]">
                 <img src="../dist/public/logo.png" />
@@ -42,7 +46,7 @@
         </div>
 
         <!-- bottom navbar -->
-        <nav class="bg-blue-600">
+        <nav class="bg-primary">
 
             <div class="max-w-7xl mx-auto px-4">
                 <div class="flex justify-between items-center h-[60px]">
@@ -115,167 +119,314 @@
         </nav>
     </header>
 
-    <!-- main content -->
-    <main class="flex items-center justify-center min-h-screen py-4">
+    <!-- main section -->
+    <main class="w-full flex flex-col gap-8 bg-white">
+        <!-- Hero / Search Bar -->
+        <div class="bg-cover bg-center relative">
+            <!-- here are the cover image -->
+            <img src="../image/Cover-Air.png" class="sm:h-[300px] w-full object-cover" alt="">
 
-        <div class="border border-gray-200 shadow-sm rounded-sm w-full max-w-3xl p-8">
+            <div class="max-w-7xl mx-auto relative px-2">
+                <div class="relative w-full h-full">
+                    <!-- Apply div here  -->
+                    <div class=" mx-auto p-4 absolute left-0 right-0 -mt-30  h-[200px]">
+                        <!-- Header with airplane background -->
+                        <div class="relative bg-gradient-to-r from-blue-400 to-blue-500 rounded-t-lg overflow-hidden">
+                            <div class="absolute inset-0 bg-white bg-opacity-10"></div>
+                            <div class="absolute top-4 right-8">
+                                <i class="fas fa-plane text-white text-4xl opacity-20"></i>
+                            </div>
+                        </div>
 
-            <!-- Title -->
-            <h2 class="text-2xl font-bold text-center">Become A Bideshgami Agent</h2>
-            <p class="text-center text-gray-500 text-sm mt-1">
-                Fill out the basic info, and get a chance to grow your business with us
-            </p>
 
-            <!-- Basic Info -->
-            <div class="mt-6">
-                <h3 class="text-blue-600 font-semibold mb-4">Basic Information</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Enter Your Name</label>
-                        <input type="text" placeholder="Your Full Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                        <!-- Main Form Container -->
+                    <div class="bg-white rounded-lg pb-12  shadow-lg p-6">
+                        <!-- From/To Section -->
+                        <div class="flex flex-col  md:flex-row items-center mb-6">
+                            <!-- From Section -->
+                            <div class="flex-1 border px-4 py-2 border-gray-300 rounded-lg">
+                                <label class="block text-gray-500 text-sm mb-1">From</label>
+                                <div class="relative">
+                                    <input type="text" value="Dhaka" class="w-full text-gray-700  font-semibold">
+                                    <div class="text-xs text-gray-400 ">Hazrat Shahjalal International Airport
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="z-10 -my-10">
+                                <svg width="100" class="md:-mx-14  z-10 ps-3" height="101" viewBox="0 0 100 101" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g filter="url(#filter0_d_1_8509)">
+                                        <rect x="30" y="29.48" width="40" height="40" rx="20" fill="white" shape-rendering="crispEdges" />
+                                        <rect x="30.5" y="29.98" width="39" height="39" rx="19.5" stroke="#CCCCCC"
+                                            shape-rendering="crispEdges" />
+                                        <path d="M54.168 48.7114L57.0925 45.7868L54.168 42.8623" stroke="#0066FF" stroke-width="1.32353"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M42.9414 45.7866H57.0925" stroke="#0066FF" stroke-width="1.32353" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M45.8659 49.9214L42.9414 52.8459L45.8659 55.7705" stroke="#0066FF" stroke-width="1.32353"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M57.0925 52.8457H42.9414" stroke="#0066FF" stroke-width="1.32353" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </g>
+                                    <defs>
+                                        <filter id="filter0_d_1_8509" x="0" y="0.47998" width="100" height="100"
+                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                result="hardAlpha" />
+                                            <feOffset dy="1" />
+                                            <feGaussianBlur stdDeviation="15" />
+                                            <feComposite in2="hardAlpha" operator="out" />
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_8509" />
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_8509" result="shape" />
+                                        </filter>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <!-- To Section -->
+                            <div class="flex-1 border px-4 py-2 border-gray-300 rounded-lg">
+                                <label class="block text-gray-500 text-sm mb-1">From</label>
+                                <div class="relative">
+                                    <input type="text" value="Dhaka" class="w-full text-gray-700  font-semibold">
+                                    <div class="text-xs text-gray-400 ">Hazrat Shahjalal International
+                                        Airport
+                                    </div>
+                                </div>
+                            </div>
+                    
+                    
+                    
+                    
+                            <div class="flex">
+                                <!-- Add Another City -->
+                                <div class=" flex items-center mt-6">
+                                    <button class="flex items-center text-blue-500 hover:text-blue-700 text-sm">
+                                        <svg width="191" height="36" viewBox="0 0 191 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="25.9541" cy="17.9541" r="8.95413" fill="#0066FF" />
+                                            <path d="M25.9531 14.9688V20.9382" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M22.9688 17.9531H28.9382" stroke="white" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M42.2614 24H40.3977L44.5852 12.3636H46.6136L50.8011 24H48.9375L45.6477 14.4773H45.5568L42.2614 24ZM42.5739 19.4432H48.6193V20.9205H42.5739V19.4432ZM55.4716 24.1705C54.767 24.1705 54.1383 23.9905 53.5852 23.6307C53.036 23.267 52.6042 22.75 52.2898 22.0795C51.9792 21.4053 51.8239 20.5966 51.8239 19.6534C51.8239 18.7102 51.9811 17.9034 52.2955 17.233C52.6136 16.5625 53.0492 16.0492 53.6023 15.6932C54.1553 15.3371 54.7822 15.1591 55.483 15.1591C56.0246 15.1591 56.4602 15.25 56.7898 15.4318C57.1231 15.6098 57.3807 15.8182 57.5625 16.0568C57.7481 16.2955 57.892 16.5057 57.9943 16.6875H58.0966V12.3636H59.7955V24H58.1364V22.642H57.9943C57.892 22.8277 57.7443 23.0398 57.5511 23.2784C57.3617 23.517 57.1004 23.7254 56.767 23.9034C56.4337 24.0814 56.0019 24.1705 55.4716 24.1705ZM55.8466 22.7216C56.3352 22.7216 56.7481 22.5928 57.0852 22.3352C57.4261 22.0739 57.6837 21.7121 57.858 21.25C58.036 20.7879 58.125 20.25 58.125 19.6364C58.125 19.0303 58.0379 18.5 57.8636 18.0455C57.6894 17.5909 57.4337 17.2367 57.0966 16.983C56.7595 16.7292 56.3428 16.6023 55.8466 16.6023C55.3352 16.6023 54.9091 16.7348 54.5682 17C54.2273 17.2652 53.9697 17.6269 53.7955 18.0852C53.625 18.5436 53.5398 19.0606 53.5398 19.6364C53.5398 20.2197 53.6269 20.7443 53.8011 21.2102C53.9754 21.6761 54.233 22.0455 54.5739 22.3182C54.9186 22.5871 55.3428 22.7216 55.8466 22.7216ZM65.4872 24.1705C64.7827 24.1705 64.1539 23.9905 63.6009 23.6307C63.0516 23.267 62.6198 22.75 62.3054 22.0795C61.9948 21.4053 61.8395 20.5966 61.8395 19.6534C61.8395 18.7102 61.9967 17.9034 62.3111 17.233C62.6293 16.5625 63.0649 16.0492 63.6179 15.6932C64.1709 15.3371 64.7978 15.1591 65.4986 15.1591C66.0402 15.1591 66.4759 15.25 66.8054 15.4318C67.1387 15.6098 67.3963 15.8182 67.5781 16.0568C67.7637 16.2955 67.9077 16.5057 68.0099 16.6875H68.1122V12.3636H69.8111V24H68.152V22.642H68.0099C67.9077 22.8277 67.7599 23.0398 67.5668 23.2784C67.3774 23.517 67.116 23.7254 66.7827 23.9034C66.4493 24.0814 66.0175 24.1705 65.4872 24.1705ZM65.8622 22.7216C66.3509 22.7216 66.7637 22.5928 67.1009 22.3352C67.4418 22.0739 67.6993 21.7121 67.8736 21.25C68.0516 20.7879 68.1406 20.25 68.1406 19.6364C68.1406 19.0303 68.0535 18.5 67.8793 18.0455C67.705 17.5909 67.4493 17.2367 67.1122 16.983C66.7751 16.7292 66.3584 16.6023 65.8622 16.6023C65.3509 16.6023 64.9247 16.7348 64.5838 17C64.2429 17.2652 63.9853 17.6269 63.8111 18.0852C63.6406 18.5436 63.5554 19.0606 63.5554 19.6364C63.5554 20.2197 63.6425 20.7443 63.8168 21.2102C63.991 21.6761 64.2486 22.0455 64.5895 22.3182C64.9342 22.5871 65.3584 22.7216 65.8622 22.7216ZM77.5895 24H75.7259L79.9134 12.3636H81.9418L86.1293 24H84.2656L80.9759 14.4773H80.8849L77.5895 24ZM77.902 19.4432H83.9474V20.9205H77.902V19.4432ZM89.3722 18.8182V24H87.6733V15.2727H89.304V16.6932H89.4119C89.6127 16.2311 89.9271 15.8598 90.3551 15.5795C90.7869 15.2992 91.3305 15.1591 91.9858 15.1591C92.5805 15.1591 93.1013 15.2841 93.5483 15.5341C93.9953 15.7803 94.3419 16.1477 94.5881 16.6364C94.8343 17.125 94.9574 17.7292 94.9574 18.4489V24H93.2585V18.6534C93.2585 18.0208 93.0938 17.5265 92.7642 17.1705C92.4347 16.8106 91.982 16.6307 91.4062 16.6307C91.0123 16.6307 90.6619 16.7159 90.3551 16.8864C90.0521 17.0568 89.8116 17.3068 89.6335 17.6364C89.4593 17.9621 89.3722 18.3561 89.3722 18.8182ZM100.912 24.1761C100.094 24.1761 99.3797 23.9886 98.7699 23.6136C98.16 23.2386 97.6866 22.714 97.3494 22.0398C97.0123 21.3655 96.8438 20.5777 96.8438 19.6761C96.8438 18.7708 97.0123 17.9792 97.3494 17.3011C97.6866 16.6231 98.16 16.0966 98.7699 15.7216C99.3797 15.3466 100.094 15.1591 100.912 15.1591C101.73 15.1591 102.444 15.3466 103.054 15.7216C103.664 16.0966 104.137 16.6231 104.474 17.3011C104.812 17.9792 104.98 18.7708 104.98 19.6761C104.98 20.5777 104.812 21.3655 104.474 22.0398C104.137 22.714 103.664 23.2386 103.054 23.6136C102.444 23.9886 101.73 24.1761 100.912 24.1761ZM100.918 22.75C101.448 22.75 101.887 22.6098 102.236 22.3295C102.584 22.0492 102.842 21.6761 103.009 21.2102C103.179 20.7443 103.264 20.2311 103.264 19.6705C103.264 19.1136 103.179 18.6023 103.009 18.1364C102.842 17.6667 102.584 17.2898 102.236 17.0057C101.887 16.7216 101.448 16.5795 100.918 16.5795C100.384 16.5795 99.9403 16.7216 99.5881 17.0057C99.2396 17.2898 98.9801 17.6667 98.8097 18.1364C98.643 18.6023 98.5597 19.1136 98.5597 19.6705C98.5597 20.2311 98.643 20.7443 98.8097 21.2102C98.9801 21.6761 99.2396 22.0492 99.5881 22.3295C99.9403 22.6098 100.384 22.75 100.918 22.75ZM110.95 15.2727V16.6364H106.183V15.2727H110.95ZM107.462 13.1818H109.161V21.4375C109.161 21.767 109.21 22.0152 109.308 22.1818C109.407 22.3447 109.534 22.4564 109.689 22.517C109.848 22.5739 110.02 22.6023 110.206 22.6023C110.342 22.6023 110.462 22.5928 110.564 22.5739C110.666 22.5549 110.746 22.5398 110.803 22.5284L111.109 23.9318C111.011 23.9697 110.871 24.0076 110.689 24.0455C110.507 24.0871 110.28 24.1098 110.007 24.1136C109.56 24.1212 109.143 24.0417 108.757 23.875C108.371 23.7083 108.058 23.4508 107.82 23.1023C107.581 22.7538 107.462 22.3163 107.462 21.7898V13.1818ZM114.716 18.8182V24H113.017V12.3636H114.693V16.6932H114.801C115.006 16.2235 115.318 15.8504 115.739 15.5739C116.159 15.2973 116.708 15.1591 117.386 15.1591C117.985 15.1591 118.508 15.2822 118.955 15.5284C119.405 15.7746 119.754 16.142 120 16.6307C120.25 17.1155 120.375 17.7216 120.375 18.4489V24H118.676V18.6534C118.676 18.0133 118.511 17.517 118.182 17.1648C117.852 16.8087 117.394 16.6307 116.807 16.6307C116.405 16.6307 116.045 16.7159 115.727 16.8864C115.413 17.0568 115.165 17.3068 114.983 17.6364C114.805 17.9621 114.716 18.3561 114.716 18.8182ZM126.403 24.1761C125.544 24.1761 124.803 23.9924 124.182 23.625C123.564 23.2538 123.087 22.733 122.75 22.0625C122.417 21.3883 122.25 20.5985 122.25 19.6932C122.25 18.7992 122.417 18.0114 122.75 17.3295C123.087 16.6477 123.557 16.1155 124.159 15.733C124.765 15.3504 125.473 15.1591 126.284 15.1591C126.777 15.1591 127.254 15.2405 127.716 15.4034C128.178 15.5663 128.593 15.822 128.96 16.1705C129.328 16.5189 129.617 16.9716 129.83 17.5284C130.042 18.0814 130.148 18.7538 130.148 19.5455V20.1477H123.21V18.875H128.483C128.483 18.428 128.392 18.0322 128.21 17.6875C128.028 17.339 127.773 17.0644 127.443 16.8636C127.117 16.6629 126.735 16.5625 126.295 16.5625C125.818 16.5625 125.402 16.6799 125.045 16.9148C124.693 17.1458 124.42 17.4489 124.227 17.8239C124.038 18.1951 123.943 18.5985 123.943 19.0341V20.0284C123.943 20.6117 124.045 21.108 124.25 21.517C124.458 21.9261 124.748 22.2386 125.119 22.4545C125.491 22.6667 125.924 22.7727 126.42 22.7727C126.742 22.7727 127.036 22.7273 127.301 22.6364C127.566 22.5417 127.795 22.4015 127.989 22.2159C128.182 22.0303 128.33 21.8011 128.432 21.5284L130.04 21.8182C129.911 22.2917 129.68 22.7064 129.347 23.0625C129.017 23.4148 128.602 23.6894 128.102 23.8864C127.606 24.0795 127.04 24.1761 126.403 24.1761ZM132.033 24V15.2727H133.675V16.6591H133.766C133.925 16.1894 134.205 15.8201 134.607 15.5511C135.012 15.2784 135.47 15.142 135.982 15.142C136.088 15.142 136.213 15.1458 136.357 15.1534C136.504 15.161 136.62 15.1705 136.703 15.1818V16.8068C136.635 16.7879 136.514 16.767 136.339 16.7443C136.165 16.7178 135.991 16.7045 135.817 16.7045C135.415 16.7045 135.057 16.7898 134.743 16.9602C134.432 17.1269 134.186 17.3598 134.004 17.6591C133.822 17.9545 133.732 18.2917 133.732 18.6705V24H132.033ZM152.209 16.1477H150.436C150.368 15.7689 150.241 15.4356 150.055 15.1477C149.87 14.8598 149.643 14.6155 149.374 14.4148C149.105 14.214 148.804 14.0625 148.47 13.9602C148.141 13.858 147.79 13.8068 147.419 13.8068C146.749 13.8068 146.148 13.9754 145.618 14.3125C145.091 14.6496 144.675 15.1439 144.368 15.7955C144.065 16.447 143.913 17.2424 143.913 18.1818C143.913 19.1288 144.065 19.928 144.368 20.5795C144.675 21.2311 145.093 21.7235 145.624 22.0568C146.154 22.3902 146.75 22.5568 147.413 22.5568C147.781 22.5568 148.129 22.5076 148.459 22.4091C148.792 22.3068 149.093 22.1572 149.362 21.9602C149.631 21.7633 149.858 21.5227 150.044 21.2386C150.233 20.9508 150.364 20.6212 150.436 20.25L152.209 20.2557C152.114 20.8277 151.93 21.3542 151.658 21.8352C151.389 22.3125 151.042 22.7254 150.618 23.0739C150.197 23.4186 149.716 23.6856 149.175 23.875C148.633 24.0644 148.042 24.1591 147.402 24.1591C146.394 24.1591 145.497 23.9205 144.709 23.4432C143.921 22.9621 143.3 22.2746 142.845 21.3807C142.394 20.4867 142.169 19.4205 142.169 18.1818C142.169 16.9394 142.396 15.8731 142.851 14.983C143.305 14.089 143.927 13.4034 144.714 12.9261C145.502 12.4451 146.398 12.2045 147.402 12.2045C148.019 12.2045 148.595 12.2936 149.129 12.4716C149.667 12.6458 150.15 12.9034 150.578 13.2443C151.006 13.5814 151.36 13.9943 151.641 14.483C151.921 14.9678 152.11 15.5227 152.209 16.1477ZM154.173 24V15.2727H155.872V24H154.173ZM155.031 13.9261C154.736 13.9261 154.482 13.8277 154.27 13.6307C154.062 13.4299 153.957 13.1913 153.957 12.9148C153.957 12.6345 154.062 12.3958 154.27 12.1989C154.482 11.9981 154.736 11.8977 155.031 11.8977C155.327 11.8977 155.579 11.9981 155.787 12.1989C155.999 12.3958 156.105 12.6345 156.105 12.9148C156.105 13.1913 155.999 13.4299 155.787 13.6307C155.579 13.8277 155.327 13.9261 155.031 13.9261ZM162.232 15.2727V16.6364H157.464V15.2727H162.232ZM158.743 13.1818H160.442V21.4375C160.442 21.767 160.491 22.0152 160.589 22.1818C160.688 22.3447 160.815 22.4564 160.97 22.517C161.129 22.5739 161.302 22.6023 161.487 22.6023C161.624 22.6023 161.743 22.5928 161.845 22.5739C161.947 22.5549 162.027 22.5398 162.084 22.5284L162.391 23.9318C162.292 23.9697 162.152 24.0076 161.97 24.0455C161.788 24.0871 161.561 24.1098 161.288 24.1136C160.841 24.1212 160.425 24.0417 160.038 23.875C159.652 23.7083 159.339 23.4508 159.101 23.1023C158.862 22.7538 158.743 22.3163 158.743 21.7898V13.1818ZM165.185 27.2727C164.931 27.2727 164.7 27.2519 164.491 27.2102C164.283 27.1723 164.128 27.1307 164.026 27.0852L164.435 25.6932C164.745 25.7765 165.022 25.8125 165.264 25.8011C165.507 25.7898 165.721 25.6989 165.906 25.5284C166.096 25.358 166.262 25.0795 166.406 24.6932L166.616 24.1136L163.423 15.2727H165.241L167.452 22.0455H167.543L169.753 15.2727H171.577L167.98 25.1648C167.813 25.6193 167.601 26.0038 167.344 26.3182C167.086 26.6364 166.779 26.875 166.423 27.0341C166.067 27.1932 165.654 27.2727 165.185 27.2727Z"
+                                                fill="#0066FF" />
+                                        </svg>
+                                    </button>
+                                </div>
+                    
+                                <!-- Apply Now Button -->
+                                <div class="mt-6">
+                                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md font-medium">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+                    
+                    
+                        </div>
+                    
+                    
+                    
+                        <!-- Tour Type Section -->
+                        <div class=" gap-5 text-xs md:text-base flex flex-col lg:flex-row items-center justify-between">
+                            <!-- Left Side - Tour Type -->
+                            <div class="flex items-center flex-wrap gap-2 sm:gap-6">
+                                <span class="text-gray-700 font-medium">Tour Type:</span>
+                    
+                                <!-- Radio Options -->
+                                <div class="flex items-center gap-1">
+                                    <div class="bg-blue-100 sm:p-3 p-2 rounded-lg text-white">
+                                        <label class="flex items-center">
+                                            <input type="radio" name="tourType" value="international" checked
+                                                class="w-4 h-4     border-gray-300 focus:ring-blue-500">
+                                            <span class="ml-2 text-gray-700">International</span>
+                                        </label>
+                                    </div>
+                    
+                    
+                    
+                                    <div class="bg-blue-100 sm:p-3 p-2 rounded-lg text-white">
+                                        <label class="flex items-center">
+                                            <input type="radio" name="tourType" value="domestic"
+                                                class="w-4 h-4 text-blue-500 border-gray-300 focus:ring-blue-500">
+                                            <span class="ml-2 text-gray-700">Domestic</span>
+                                        </label>
+                                    </div>
+                    
+                                    <div class="bg-blue-100 sm: sm:p-3 p-2 rounded-lg text-white">
+                                        <label class="flex items-center">
+                                            <input type="radio" name="tourType" value="ladies"
+                                                class="w-4 h-4 text-blue-500 border-gray-300 focus:ring-blue-500">
+                                            <span class="ml-2 text-gray-700">Ladies tour package</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Right Side - Search and Customize -->
+                            <div class="flex items-center gap-4">
+                                <!-- Search Section -->
+                                <div class="flex items-center relative">
+                                    <input type="text" placeholder="Search Your Tour Package" class="px-4 py-2 border border-gray-300  rounded-l-md focus:outline-none focus:ring-2 
+                                                                        shadow-md 
+                                                                        focus:ring-blue-500 w-64">
+                    
+                                    <!-- srearch icon -->
+                                    <svg class="absolute right-2" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="11" cy="11" r="11" fill="#0066FF" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.74322 6.30463C8.83084 6.30463 7.95582 6.66706 7.31067 7.31218C6.66552 7.9573 6.30308 8.83227 6.30308 9.74461C6.30308 10.6569 6.66552 11.5319 7.31067 12.177C7.95582 12.8222 8.83084 13.1846 9.74322 13.1846C10.6556 13.1846 11.5306 12.8222 12.1758 12.177C12.8209 11.5319 13.1834 10.6569 13.1834 9.74461C13.1834 8.83227 12.8209 7.9573 12.1758 7.31218C11.5306 6.66706 10.6556 6.30463 9.74322 6.30463ZM4.58301 9.74461C4.5829 8.93252 4.77449 8.13187 5.14218 7.40778C5.50987 6.68369 6.04328 6.05661 6.69904 5.57753C7.35479 5.09845 8.11437 4.7809 8.91599 4.65072C9.71762 4.52053 10.5387 4.58139 11.3123 4.82832C12.086 5.07526 12.7905 5.50131 13.3684 6.07183C13.9464 6.64234 14.3815 7.34121 14.6384 8.11159C14.8953 8.88198 14.9668 9.70212 14.847 10.5053C14.7271 11.3085 14.4194 12.0721 13.9488 12.7339L18.0916 16.8765C18.2482 17.0387 18.3349 17.256 18.333 17.4815C18.331 17.7069 18.2406 17.9226 18.0811 18.0821C17.9217 18.2415 17.7059 18.332 17.4804 18.334C17.2549 18.3359 17.0377 18.2492 16.8755 18.0926L12.7336 13.9508C11.9616 14.4998 11.0534 14.8256 10.1085 14.8926C9.16356 14.9597 8.21844 14.7653 7.37666 14.3309C6.53488 13.8965 5.82893 13.2388 5.33616 12.4298C4.84339 11.6208 4.58282 10.6918 4.58301 9.74461Z"
+                                            fill="white" />
+                                    </svg>
+                    
+                    
+                                </div>
+                    
+                                <!-- Customize Tour Button -->
+                                <button class="bg-blue-500  hover:bg-blue-600 text-white sm:px-8 px-2 py-2 rounded-md font-medium">
+                                    Customize Tour
+                                </button>
+                            </div>
+                    
+                    
+                    
+                        </div>
                     </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Select Your Gender</label>
-                        <select
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                            <option>Select Your Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Agent/ Shop Name</label>
-                        <input type="text" placeholder="Agent/ Shop Name"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Agent/ Shop Address</label>
-                        <input type="text" placeholder="Agent/Shop Address"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
+                       <div class="flex -mt-4">
+                        <button class="bg-blue-500 hover:bg-blue-600 text-white px-6  py-2 mx-auto rounded-md font-medium">
+                            Search
+                        </button>
+                       </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Login Info -->
-            <div class="mt-6">
-                <h3 class="text-blue-600 font-semibold mb-4">Login Information</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Enter Your Phone Number</label>
-                        <input type="text" placeholder="Enter Your Phone Number"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div>
-                        <label class="text-sm font-medium text-gray-700 mb-1">Enter Your E-mail</label>
-                        <input type="email" placeholder="Your E-mail"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-600">
-                    </div>
-                    <div class="relative">
-                        <label class="text-sm font-medium text-gray-700 mb-1">Create New Password</label>
-                        <input type="password" placeholder="Create New Password"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 pr-10 focus:outline-none focus:border-blue-600">
-                        <span class="absolute right-3 top-9 text-gray-400 cursor-pointer">
-                            <svg viewBox="0 0 20.5312 17.188" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20.531250" height="17.187988"
-                                fill="none" customFrame="#000000">
-                                <g id="Group 127">
-                                    <path id="Vector"
-                                        d="M3.49519 0.302014C3.29228 0.106033 3.02051 -0.00241065 2.73841 4.06714e-05C2.45632 0.00249199 2.18647 0.115642 1.98699 0.31512C1.78752 0.514598 1.67437 0.784444 1.67192 1.06654C1.66946 1.34863 1.77791 1.6204 1.97389 1.82332L17.0363 16.8857C17.2392 17.0817 17.511 17.1902 17.7931 17.1877C18.0752 17.1853 18.345 17.0721 18.5445 16.8726C18.744 16.6731 18.8571 16.4033 18.8596 16.1212C18.862 15.8391 18.7536 15.5673 18.5576 15.3644L16.9728 13.7796C18.6486 12.4435 19.8877 10.638 20.5319 8.59387C19.1612 4.229 15.0836 1.06267 10.2657 1.06267C8.57922 1.06038 6.91598 1.45628 5.41135 2.21817L3.49519 0.302014ZM8.07955 4.88529L9.70844 6.51526C10.0733 6.41838 10.4571 6.41902 10.8216 6.51712C11.1861 6.61522 11.5185 6.80734 11.7854 7.07425C12.0523 7.34116 12.2444 7.6735 12.3425 8.03799C12.4406 8.40249 12.4412 8.78636 12.3444 9.15118L13.9733 10.7801C14.4585 9.95812 14.6567 8.99819 14.5366 8.05128C14.4166 7.10437 13.9852 6.22423 13.3103 5.54931C12.6354 4.87438 11.7553 4.44299 10.8083 4.32298C9.86144 4.20297 8.9015 4.40008 8.07955 4.88529Z"
-                                        fill="rgb(62.7041,62.7041,62.7041)" fill-opacity="0.800000012"
-                                        fill-rule="evenodd" />
-                                    <path id="Vector"
-                                        d="M12.9063 15.799L9.99714 12.8887C8.95104 12.8232 7.96482 12.3781 7.22357 11.6371C6.48231 10.896 6.03699 9.90992 5.97117 8.86384L2.01944 4.91211C1.11054 5.99447 0.424275 7.24562 0 8.59379C1.37068 12.9587 5.44937 16.125 10.2661 16.125C11.1774 16.125 12.0618 16.012 12.9063 15.799Z"
-                                        fill="rgb(62.7041,62.7041,62.7041)" fill-opacity="0.800000012"
-                                        fill-rule="nonzero" />
-                                </g>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="relative">
-                        <label class="text-sm font-medium text-gray-700 mb-1">Enter Your Confirm Password</label>
-                        <input type="password" placeholder="Enter Your Confirm Password"
-                            class="w-full border border-gray-300 rounded-md px-3 py-2 pr-10 focus:outline-none focus:border-blue-600">
-                        <span class="absolute right-3 top-9 text-gray-400 cursor-pointer">
-                            <svg viewBox="0 0 20.5312 17.188" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" width="20.531250" height="17.187988"
-                                fill="none" customFrame="#000000">
-                                <g id="Group 127">
-                                    <path id="Vector"
-                                        d="M3.49519 0.302014C3.29228 0.106033 3.02051 -0.00241065 2.73841 4.06714e-05C2.45632 0.00249199 2.18647 0.115642 1.98699 0.31512C1.78752 0.514598 1.67437 0.784444 1.67192 1.06654C1.66946 1.34863 1.77791 1.6204 1.97389 1.82332L17.0363 16.8857C17.2392 17.0817 17.511 17.1902 17.7931 17.1877C18.0752 17.1853 18.345 17.0721 18.5445 16.8726C18.744 16.6731 18.8571 16.4033 18.8596 16.1212C18.862 15.8391 18.7536 15.5673 18.5576 15.3644L16.9728 13.7796C18.6486 12.4435 19.8877 10.638 20.5319 8.59387C19.1612 4.229 15.0836 1.06267 10.2657 1.06267C8.57922 1.06038 6.91598 1.45628 5.41135 2.21817L3.49519 0.302014ZM8.07955 4.88529L9.70844 6.51526C10.0733 6.41838 10.4571 6.41902 10.8216 6.51712C11.1861 6.61522 11.5185 6.80734 11.7854 7.07425C12.0523 7.34116 12.2444 7.6735 12.3425 8.03799C12.4406 8.40249 12.4412 8.78636 12.3444 9.15118L13.9733 10.7801C14.4585 9.95812 14.6567 8.99819 14.5366 8.05128C14.4166 7.10437 13.9852 6.22423 13.3103 5.54931C12.6354 4.87438 11.7553 4.44299 10.8083 4.32298C9.86144 4.20297 8.9015 4.40008 8.07955 4.88529Z"
-                                        fill="rgb(62.7041,62.7041,62.7041)" fill-opacity="0.800000012"
-                                        fill-rule="evenodd" />
-                                    <path id="Vector"
-                                        d="M12.9063 15.799L9.99714 12.8887C8.95104 12.8232 7.96482 12.3781 7.22357 11.6371C6.48231 10.896 6.03699 9.90992 5.97117 8.86384L2.01944 4.91211C1.11054 5.99447 0.424275 7.24562 0 8.59379C1.37068 12.9587 5.44937 16.125 10.2661 16.125C11.1774 16.125 12.0618 16.012 12.9063 15.799Z"
-                                        fill="rgb(62.7041,62.7041,62.7041)" fill-opacity="0.800000012"
-                                        fill-rule="nonzero" />
-                                </g>
-                            </svg>
-
-                        </span>
-                    </div>
+                <div class=" h-[250px] w-full">
                 </div>
-            </div>
 
-            <!-- Upload Section -->
-            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="flex flex-col items-center p-4">
-                    <p class="text-sm font-medium text-gray-700 mb-2">Upload Your Photo*</p>
-                    <div class="w-full flex flex-col items-center justify-center h-28 rounded-md bg-blue-100">
-                        <img src="../dist/public/uploadIcon.png" alt="" class="h-12">
-                        <span class="text-gray-500 text-sm">Browse Image</span>
+
+            <div class="bg-white shadow rounded-lg p-6 w-full max-w-2xl mx-auto">
+                <!-- Heading -->
+                <h2 class="text-center text-2xl font-semibold">Customize Tour</h2>
+                <p class="text-center text-gray-500 text-sm mb-4">
+                    To apply for a customized tour package, there must be at least two applicants.
+                </p>
+            
+                <!-- Form -->
+                <form class="space-y-3">
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" placeholder="Full Name"
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+                        <input type="text" placeholder="Phone Number"
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
                     </div>
-                    <button
-                        class="mt-3 w-full bg-blue-600 text-white py-1.5 rounded-md hover:bg-blue-700">Upload</button>
-                </div>
-                <div class="flex flex-col items-center p-4">
-                    <p class="text-sm font-medium text-gray-700 mb-2">Upload NID*</p>
-                    <div class="w-full flex flex-col items-center justify-center h-28 rounded-md bg-blue-100">
-                        <img src="../dist/public/uploadIcon.png" alt="" class="h-12">
-                        <span class="text-gray-500 text-sm">Browse Image</span>
+            
+                    <input type="email" placeholder="Email"
+                        class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+            
+                    <div class="grid grid-cols-3 gap-2">
+                        <input type="text" placeholder="Applying From"
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+                        <input type="text" placeholder="Applying From"
+                            class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+                        <button type="button"
+                            class="border  rounded-md px-3 py-2 text-sm text-blue-600 border-blue-500 hover:bg-blue-50 flex items-center justify-center">
+                            <span class="mr-1 font-bold bg-blue-600 text-white px-1 rounded-full">+</span> Add another city
+                        </button>
                     </div>
-                    <button
-                        class="mt-3 w-full bg-blue-600 text-white py-1.5 rounded-md hover:bg-blue-700">Upload</button>
-                </div>
-                <div class="flex flex-col items-center p-4">
-                    <p class="text-sm font-medium text-gray-700 mb-2">Upload Trade License</p>
-                    <div class="w-full flex flex-col items-center justify-center h-28 rounded-md bg-blue-100">
-                        <img src="../dist/public/uploadIcon.png" alt="" class="h-12">
-                        <span class="text-gray-500 text-sm">Browse Image</span>
+            
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" placeholder="Traveling Date"
+                            class="w-full  border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
+                        <input type="text" placeholder="Travelers"
+                            class="w-full  border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300" />
                     </div>
-                    <button
-                        class="mt-3 w-full bg-blue-600 text-white py-1.5 rounded-md hover:bg-blue-700">Upload</button>
-                </div>
-            </div>
-
-            <!-- Terms -->
-            <div class="flex items-start mt-6">
-                <input type="checkbox" class="mt-1 text-blue-600">
-                <label class="ml-2 text-sm text-gray-600">
-                    By Continuing, I agree to the website <a href="#" class="text-blue-600 hover:underline">Terms And
-                        Condition</a> and Privacy Policy
-                </label>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="mt-6 text-center">
-                <button
-                    class="w-40 bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 font-medium">Create</button>
-            </div>
-
+            
+                    <!-- Travelers count -->
+<div class="space-y-2 mt-4">
+    <div class="flex items-center justify-between text-sm">
+        <div>
+            <p class="font-medium text-blue-600">Adult</p>
+            <p class="text-gray-500">12 Years and above</p>
         </div>
+        <div class="flex items-center space-x-2">
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">−</button>
+            <span>1</span>
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">+</button>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between text-sm">
+        <div>
+            <p class="font-medium text-blue-600">Children</p>
+            <p class="text-gray-500">5 Years - under 12 Years</p>
+        </div>
+        <div class="flex items-center space-x-2">
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">−</button>
+            <span>0</span>
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">+</button>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between text-sm">
+        <div>
+            <p class="font-medium text-blue-600">Kids</p>
+            <p class="text-gray-500">2 years - under 5 Years</p>
+        </div>
+        <div class="flex items-center space-x-2">
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">−</button>
+            <span>0</span>
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">+</button>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between text-sm">
+        <div>
+            <p class="font-medium text-blue-600">Kids</p>
+            <p class="text-gray-500">2 years - under 5 Years</p>
+        </div>
+        <div class="flex items-center space-x-2">
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">−</button>
+            <span>0</span>
+            <button type="button"
+                class="bg-gray-200 rounded-full text-white w-3 h-3 flex items-center justify-center">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Submit button -->
+<div class="flex justify-center mt-4">
+    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700">
+        Submit
+    </button>
+</div>
+
+                </form>
+            </div>
+
+
 
     </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-primary text-white text-sm">
+
+
+
+      <footer class="bg-blue-600 text-white text-sm mt-16">
         <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+
             <!-- Discover -->
             <div>
                 <h3 class="font-semibold mb-3">Discovr</h3>
                 <ul class="space-y-2">
-                    <li><a href="./index.html" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Home</a></li>
                     <li><a href="#" class="hover:underline">Terms & conditions</a></li>
                     <li><a href="#" class="hover:underline">Career</a></li>
                     <li><a href="#" class="hover:underline">Refund Policy</a></li>
@@ -288,7 +439,12 @@
             <div>
                 <h3 class="font-semibold mb-3">Payment Methods</h3>
                 <div class="grid grid-cols-3 gap-3">
-                    <img src="../dist/public/payment.png" alt="">
+                    <svg viewBox="0 0 135 119" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="135.000000" height="119.000000" fill="none"
+                        customFrame="#000000">
+                        <rect id="PngItem_479383 1" width="135.000000" height="119.000000" x="0.000000" y="0.000000"
+                            fill="url(#pattern_9)" />
+                    </svg>
 
                 </div>
             </div>
@@ -318,12 +474,12 @@
                             alt="App Store" class="h-10"></a>
                 </div>
                 <h3 class="font-semibold mb-3">Follow Us</h3>
-                <div class="flex items-center space-x-4 text-lg">
-                    <a href="#"><img src="../dist/public/social1.png" alt=""></i></a>
-                    <a href="#"><img src="../dist/public/social2.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social3.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social4.png" alt=""></a>
-                    <a href="#"><img src="../dist/public/social5.png" alt=""></a>
+                <div class="flex space-x-4 text-lg">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -337,23 +493,23 @@
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="163.000000" height="58.000000" fill="none"
                         customFrame="#000000">
                         <defs>
-                            <image id="image_0" width="673.000000" height="240.000000"
+                            <image id="image_10" width="673.000000" height="240.000000"
                                 xlink:href="data:image/png;base64,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" />
-                            <pattern id="pattern_0" width="1.000000" height="1.000000" image-fill-type="fill"
+                            <pattern id="pattern_10" width="1.000000" height="1.000000" image-fill-type="fill"
                                 patternContentUnits="objectBoundingBox">
                                 <use transform="matrix(0.00148588,0,0,0.00417585,0,-0.00110161)"
-                                    xlink:href="#image_0" />
+                                    xlink:href="#image_10" />
                             </pattern>
                         </defs>
                         <rect id="Artboard 4" width="163.000000" height="58.000000" x="0.000000" y="0.000000"
-                            fill="url(#pattern_0)" />
+                            fill="url(#pattern_10)" />
                     </svg>
 
                 </div>
                 <p class="mt-3 md:mt-0 text-xs">© Copyright Bideshgami.</p>
             </div>
         </div>
-    </footer>
+    </footer
 
     <script src="./toggle.js"></script>
 
